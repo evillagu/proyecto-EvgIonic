@@ -1,0 +1,6 @@
+.display-flex {
+    display: flex;
+    &__column {
+        flex-flow: column;
+    }
+}

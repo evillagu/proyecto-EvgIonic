@@ -1,0 +1,37 @@
+<app-header titulo="Description">
+</app-header>
+
+<ion-content class="ion-padding">
+    <form #formDescription="ngForm" (ngSubmit)="save(formDescription)" class="margin-btn__5porcen">
+        <ion-list-header>
+            <ion-label>Adjuntar Producto </ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input type="text" placeholder="Escriba el Nombre" name="name" [(ngModel)]="form.name" clear-on-edit required>
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Descripcion</ion-label>
+            <ion-input type="text" placeholder="descripcion del producto" name="description" [(ngModel)]="form.description" clear-on-edit required>
+            </ion-input>
+        </ion-item>
+        <ion-button type="sumit" class="ion-padding" [disabled]="formDescription.invalid" expand="full">
+            Añadir producto
+        </ion-button>
+
+    </form>
+    <ion-list *ngFor="let listdata of listData">
+        <ion-card>
+            <ion-item class="ion-activated">
+                <ion-icon name="bug-outline" slot="start"></ion-icon>
+
+                <div class="display-flex__column">
+                    <ion-label class="ion-padding">{{listdata.name}}</ion-label>
+                    <ion-label class="ion-padding">{{listdata.description}}</ion-label>
+                </div>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+
+</ion-content>

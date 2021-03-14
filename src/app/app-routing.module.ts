@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'action-sheet',
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
+  {
+    path: 'form-descripcion',
+    loadChildren: () => import('./pages/form-descripcion/form-descripcion.module').then( m => m.FormDescripcionPageModule)
+  },
 ];
 
 @NgModule({
