@@ -21,14 +21,13 @@
         </ion-button>
 
     </form>
-    <ion-list *ngFor="let listdata of listData">
+    <ion-list class="margin-btn__-15" *ngFor="let listdata of listData">
         <ion-card>
             <ion-item class="ion-activated">
                 <ion-icon name="bug-outline" slot="start"></ion-icon>
-
                 <div class="display-flex__column">
-                    <ion-label class="ion-padding">{{listdata.name}}</ion-label>
-                    <ion-label class="ion-padding">{{listdata.description}}</ion-label>
+                    <ion-label>{{listdata.name}}</ion-label>
+                    <ion-label>{{listdata.description}}</ion-label>
                 </div>
             </ion-item>
         </ion-card>
