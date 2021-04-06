@@ -1,0 +1,17 @@
+[{
+    "img": "/assets/img/productos.jpg",
+    "name": "PRODUCTOS",
+    "recdirecTo": "/tabs"
+}, {
+    "img": "/assets/img/man-car.jpg",
+    "name": "COMPRAS REALIZADAS",
+    "recdirecTo": "/alert"
+}, {
+    "img": "/assets/img/listaHome.jpg",
+    "name": "LISTA DE COMPRAS",
+    "recdirecTo": "/alert"
+}, {
+    "img": "/assets/img/mapa.jpg",
+    "name": "MAPA",
+    "recdirecTo": "/alert"
+}]

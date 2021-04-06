@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { DataFromProduc } from '../models/fromProduc';
+import { DataFromProduc } from '../models-interfaces/fromProduc';
+
 
 @Injectable({
   providedIn: 'root'

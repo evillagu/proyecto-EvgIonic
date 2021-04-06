@@ -1,17 +1,15 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-title>
-            Actividad 4.2
-        </ion-title>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
-    <ion-button routerLink="/alert">
-        Productos
-    </ion-button>
-    <ion-button routerLink="/form-descripcion">
-        Descripcion producto
-    </ion-button>
+    <div class="content-img-background content-img-background__home  displayFlex__column  displayFlex__column-center">
+        <div class="displayFlex" *ngFor="let dta of navegacion | async">
+            <ion-buttons mode="md" class="initial-btn__content margin-btn__5porcen" block [routerLink]="dta.recdirecTo">
+                <div class="initial-item">
+                    <ion-avatar slot="start">
+                        <img [src]="dta.img">
+                    </ion-avatar>
+                    <ion-label class="initial-label displayFlex__column displayFlex__column-center">{{dta.name}}</ion-label>
+                </div>
+            </ion-buttons>
+        </div>
+    </div>
 
 </ion-content>

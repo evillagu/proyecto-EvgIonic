@@ -1,0 +1,22 @@
+.general {
+    .displayFlex {
+        display: flex;
+        &__row {
+            display: flex;
+            flex-direction: row;
+            &-center {
+                justify-content: center;
+            }
+        }
+        &__column {
+            display: flex;
+            flex-direction: column;
+            &-center {
+                justify-content: center;
+            }
+        }
+    }
+    .textAlign {
+        text-align: center;
+    }
+}

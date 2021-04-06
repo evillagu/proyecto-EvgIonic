@@ -16,12 +16,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
   {
-    path: 'form-descripcion',
-    loadChildren: () => import('./pages/form-descripcion/form-descripcion.module').then( m => m.FormDescripcionPageModule)
-  },
-  {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'list-produc-genere',
+    loadChildren: () => import('./pages/lists/list-produc-genere/list-produc-genere.module').then( m => m.ListProducGenerePageModule)
+  },
+  {
+    path: 'list-produc-nues',
+    loadChildren: () => import('./pages/lists/list-produc-nues/list-produc-nues.module').then( m => m.ListProducNuesPageModule)
+  },
+  {
+    path: 'list-produc-espe',
+    loadChildren: () => import('./pages/lists/list-produc-espe/list-produc-espe.module').then( m => m.ListProducEspePageModule)
   },
 ];
 

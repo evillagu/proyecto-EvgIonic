@@ -1,0 +1,8 @@
+.general {
+    .content-img-background {
+        height: 100vh;
+        &__home {
+            background-image: repeating-linear-gradient(-45deg, rgb(112, 112, 112), #47b1cc 20px, transparent 40px), repeating-linear-gradient(45deg, rgb(112, 112, 112), firebrick 20px, transparent 40px);
+        }
+    }
+}

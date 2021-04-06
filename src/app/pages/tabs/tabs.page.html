@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tabs</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="PRODUCTOS">
+</app-header>
+<ion-tabs class="tabs-produc">
+    <ion-tab-bar class="tabs-bar" slot="top">
+        <ion-tab-button tab="producgenere">
+            <ion-icon name="fish-sharp"></ion-icon>
+            <ion-label class="tabs-label">PRODUCTOS
+                <span>GENERALES</span>
+            </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="producnues">
+            <ion-icon name="accessibility-sharp"></ion-icon>
+            <ion-label class="tabs-label">PRODUCTOS
+                <span>NUESTROS</span>
+            </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="producespe">
+            <ion-icon name="pizza-sharp"></ion-icon>
+            <ion-label class="tabs-label">PRODUCTOS
+                <span>ESPECIALES</span>
+            </ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
 
-<ion-content>
 
-</ion-content>
+<!-- <app-form-producto></app-form-producto> -->

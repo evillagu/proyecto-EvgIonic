@@ -1,0 +1,20 @@
+.general {
+    .margin {
+        &-btn {
+            &__5porcen {
+                margin-bottom: 5% !important;
+            }
+            &__-15 {
+                margin-bottom: -15px;
+            }
+            &__5px {
+                margin-bottom: 5px;
+            }
+        }
+        &-top {
+            &__20porcen {
+                margin-top: 20%;
+            }
+        }
+    }
+}

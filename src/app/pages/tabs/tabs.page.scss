@@ -1,0 +1,12 @@
+ion-tabs.tabs-produc {
+    top: 76px;
+    .tabs {
+        &-bar {
+            height: 75px;
+        }
+        &-label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
