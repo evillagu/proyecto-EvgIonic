@@ -1,0 +1,366 @@
+[{
+        "produc": "Arroz",
+        "genero": "arroz",
+        "items": [{
+                "nombre": "Largo",
+                "precio": "0.80"
+            },
+            {
+                "nombre": "Redondo",
+                "precio": "1.10"
+            },
+            {
+                "nombre": "Basmati",
+                "precio": "1.20",
+                "sitio": "carrefour",
+                "descripcion": "para microondas"
+            },
+            {
+                "nombre": "integral",
+                "precio": "1.55"
+            }
+
+
+        ]
+
+    },
+    {
+        "produc": "Pasta",
+        "genero": "pastas",
+        "items": [{
+                "nombre": "Espirales",
+                "precio": "0.60"
+            },
+            {
+                "nombre": "Macarrones",
+                "precio": "0.45"
+            },
+            {
+                "nombre": "Espaguetis",
+                "precio": "0.45"
+            },
+            {
+                "nombre": "Tallarines",
+                "precio": "0.75"
+            },
+            {
+                "nombre": "Figuras",
+                "precio": "0.70"
+            },
+            {
+                "nombre": "Nidos",
+                "precio": "0.70",
+                "sitio": "carrefour",
+                "descripcion": "para hacerlos con carne"
+
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Garbanzo",
+        "genero": "Legumbres",
+        "items": [{
+                "nombre": "grano",
+                "precio": "1.50"
+            },
+            {
+                "nombre": "cosido",
+                "precio": "0.70"
+            }
+        ]
+
+    },
+    {
+        "produc": "Lentejas",
+        "genero": "Legumbres",
+        "items": [{
+                "nombre": "grano",
+                "precio": "1.90"
+            },
+            {
+                "nombre": "cosido",
+                "precio": "1.00"
+            }
+        ]
+
+    },
+    {
+        "produc": "Alubia",
+        "genero": "Legumbres",
+        "items": [{
+                "nombre": "blancas grano",
+                "precio": "1.65"
+            },
+            {
+                "nombre": "blancas cosido",
+                "precio": "0.65"
+            },
+            {
+                "nombre": "rojas grano",
+                "precio": "1.80"
+            },
+            {
+                "nombre": "rojas cosido",
+                "precio": "0.75"
+            },
+            {
+                "nombre": "pinta grano",
+                "precio": "1.90"
+            },
+            {
+                "nombre": "pinta cosido",
+                "precio": "0.80"
+            }
+
+        ]
+
+    },
+
+    {
+        "produc": "aceites",
+        "genero": "aceites y vinagres",
+        "items": [{
+                "nombre": "girasol",
+                "precio": "1.25",
+                "descripcion": "1lt"
+            },
+            {
+                "nombre": "oliva",
+                "precio": "2.35",
+                "descripcion": "1lt"
+            },
+            {
+                "nombre": "girasol",
+                "precio": "5.80",
+                "descripcion": "5lt"
+            },
+            {
+                "nombre": " oliva",
+                "precio": "10,50",
+                "descripcion": "5lt"
+            }
+        ]
+    },
+    {
+        "produc": "vinagre",
+        "genero": "aceites y vinagres",
+        "items": [{
+                "nombre": "manzana",
+                "precio": "10,50",
+                "descripcion": "5lt"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Tomate frito",
+        "genero": "salsas y tomates",
+        "items": [{
+                "nombre": "pack 3",
+                "precio": "0.95"
+            },
+            {
+                "nombre": "tarro",
+                "precio": "0.75",
+                "descripcion": "550ml"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Kétchup",
+        "genero": "salsas y tomates",
+        "items": [{
+                "nombre": "tarro",
+                "precio": "0.80",
+                "descripcion": "560ml"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Mayonesa",
+        "genero": "salsas y tomates",
+        "items": [{
+                "nombre": "tarro",
+                "precio": "1.10",
+                "descripcion": "450ml"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Guacamole",
+        "genero": "salsas y tomates",
+        "items": [{
+                "nombre": "tarro",
+                "precio": "1.65",
+                "descripcion": "200g"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Orégano",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "triturado",
+                "precio": "0.45"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "ajo",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "triturado",
+                "precio": "0.55"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "laurel",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "hoja",
+                "precio": "0.55"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "curry",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "triturado",
+                "precio": "0.65"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Perejil",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "triturado",
+                "precio": "0.70"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Romero",
+        "genero": "especias y sazonadores",
+        "items": [{
+                "nombre": "triturado",
+                "precio": "1.00"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "levadura",
+        "genero": "Harinas y Levaduras",
+        "items": [{
+                "nombre": "caja",
+                "precio": "1.20"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Harina",
+        "genero": "Harinas y Levaduras",
+        "items": [{
+                "nombre": "caja",
+                "precio": "0.80"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "sal",
+        "genero": "sales y azucar",
+        "items": [{
+                "nombre": "marina",
+                "precio": "0.25"
+            },
+            {
+                "nombre": "gruesa",
+                "precio": "0.25"
+            },
+            {
+                "nombre": "yodada",
+                "precio": "0.65"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "Bicarbonato",
+        "genero": "sales y azucar",
+        "items": [{
+                "nombre": "sódico",
+                "precio": "0.50"
+            }
+
+        ]
+
+    },
+    {
+        "produc": "azucar",
+        "genero": "sales y azucar",
+        "items": [{
+                "nombre": "moreno",
+                "precio": "0.95"
+            },
+            {
+                "nombre": "blanca",
+                "precio": "0.73"
+            }
+
+
+        ]
+
+    },
+    {
+        "produc": "pan",
+        "genero": "pan y galletas",
+        "items": [{
+                "nombre": "molde",
+                "precio": "1.00",
+                "descripcion": "grande"
+
+            },
+            {
+                "nombre": "mole sin corteza",
+                "precio": "1.00",
+                "descripcion": "pequeño"
+            }
+
+
+        ]
+
+    }
+
+
+
+]

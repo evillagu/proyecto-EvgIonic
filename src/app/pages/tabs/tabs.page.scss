@@ -8,5 +8,14 @@ ion-tabs.tabs-produc {
             display: flex;
             flex-direction: column;
         }
+        &-btn {
+            background: rgba(74, 138, 132, 0.479);
+            color: azure;
+        }
+    }
+    .tab-selected {
+        background: rgb(107, 107, 107);
+        color: var(--ion-color-secondary);
+        border-bottom: 5px solid var(--ion-color-secondary);
     }
 }
