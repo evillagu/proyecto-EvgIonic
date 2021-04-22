@@ -5,13 +5,31 @@
 </ion-header> -->
 
 <ion-content>
-    <ion-list class="margin-btn__20vh">
-        <ion-item *ngFor="let dta of DtaServiceProduc | async">
-            <ion-label>
-                {{dta.produc}}
-            </ion-label>
+    <ion-list class="margin-btn__5px" *ngFor="let dta of DtaServiceProduc | async">
+        <div class="displayFlex-row">
+            <ion-avatar class="margin-0-10">
+                <img src="../../../../assets/img/icon-product/arroz.jpg">
+            </ion-avatar>
+            <h2 class="text-subtitle">{{dta.genero}}</h2>
+        </div>
+
+        <ion-item *ngFor="let dtaItems of dta.items">
+            <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
+                <div class="displayFlex-column">
+                    <ion-label slot="start">
+                        <h2 class="text-subtitle">{{dtaItems.nombre}}</h2>
+                        <span>{{dtaItems.marca}}</span>
+                    </ion-label>
+                    <ion-label>
+                        <span>{{dtaItems.descripcion}}</span>
+                    </ion-label>
+                </div>
+                <span>{{dtaItems.precio}}€</span>
+            </ion-card>
         </ion-item>
+
     </ion-list>
+
     <ion-infinite-scroll threshold="100%" position="bottom" (ionInfinite)="loadData($event)">
         <ion-infinite-scroll-content loadingSpinner="crescent">
         </ion-infinite-scroll-content>

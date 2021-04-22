@@ -1,12 +1,12 @@
 <ion-content>
-    <div class="content-img-background content-img-background__home  displayFlex__column  displayFlex__column-center">
+    <div class="content-img-background content-img-background__home  displayFlex-column  displayFlex-column__center">
         <div class="displayFlex" *ngFor="let dta of navegacion | async">
             <ion-buttons mode="md" class="initial-btn__content margin-btn__5porcen" block [routerLink]="dta.recdirecTo">
                 <div class="initial-item">
                     <ion-avatar slot="start">
                         <img [src]="dta.img">
                     </ion-avatar>
-                    <ion-label class="initial-label displayFlex__column displayFlex__column-center">{{dta.name}}</ion-label>
+                    <ion-label class="initial-label displayFlex-column displayFlex-column__center">{{dta.name}}</ion-label>
                 </div>
             </ion-buttons>
         </div>

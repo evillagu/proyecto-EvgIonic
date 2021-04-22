@@ -1,5 +1,8 @@
 .general {
     .margin {
+        &-0-10 {
+            margin: 0 10px;
+        }
         &-btn {
             &__5porcen {
                 margin-bottom: 5% !important;
@@ -9,9 +12,6 @@
             }
             &__5px {
                 margin-bottom: 5px;
-            }
-            &__20vh {
-                margin-bottom: 20vh;
             }
         }
         &-top {

@@ -14,6 +14,7 @@ export class ListProducGenerePage implements OnInit {
   @ViewChild(IonInfiniteScroll) inifiteScroll: IonInfiniteScroll;
 
   DtaServiceProduc : Observable<Products[]>;
+  imgAvatar : string;
   constructor( private dataService: DataService) { }
 
   ngOnInit() {
@@ -22,7 +23,7 @@ export class ListProducGenerePage implements OnInit {
   }
   loadData( event){
     this.inifiteScroll.complete();
-    this.inifiteScroll.disabled = true;
+    // this.inifiteScroll.disabled = true;
     
   }
 

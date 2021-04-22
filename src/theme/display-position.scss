@@ -1,17 +1,20 @@
 .general {
     .displayFlex {
         display: flex;
-        &__row {
+        &-row {
             display: flex;
             flex-direction: row;
-            &-center {
+            &__center {
                 justify-content: center;
             }
+            &__justi-around {
+                justify-content: space-around;
+            }
         }
-        &__column {
+        &-column {
             display: flex;
             flex-direction: column;
-            &-center {
+            &__center {
                 justify-content: center;
             }
         }
