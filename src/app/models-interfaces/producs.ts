@@ -1,6 +1,9 @@
+import { ItemProducts } from "./itemProduct";
+
 export interface Products{
-arroz?: string;
-cebolla?: string;
-cafe? :string;
+produc?: string;
+genero?: string;
+sitio? :string;
+items?: ItemProducts[];
 }
 

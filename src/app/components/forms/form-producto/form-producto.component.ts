@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataFromProduc } from '../../../models-interfaces/fromProduc';
-import { FromProducService } from '../../../services/from-produc.service';
 import { NgForm } from '@angular/forms';
+import { GeneralService } from '../../../services/general.service';
 
 @Component({
   selector: 'app-form-producto',
@@ -15,16 +15,16 @@ export class FormProductoComponent implements OnInit {
     description: ""
   };
   listData: DataFromProduc[];
-  constructor(public fromProducService: FromProducService) {
+  constructor(public generalService: GeneralService) {
     this.form;
   }
 
   ngOnInit() {
-    this.listData = this.fromProducService.getDtaFrom();
+    this.listData = this.generalService.getDtaFrom();
   }
   save(formulario: NgForm) {
     let value = formulario.value;
-    this.fromProducService.addDtaFrom({
+    this.generalService.addDtaFrom({
       name: value.name,
       description: value.description
     });

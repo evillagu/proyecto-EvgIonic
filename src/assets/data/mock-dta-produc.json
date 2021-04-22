@@ -1,6 +1,7 @@
 [{
         "produc": "Arroz",
         "genero": "arroz",
+        "sitio": "carrefour",
         "items": [{
                 "nombre": "Largo",
                 "precio": "0.80"
@@ -12,7 +13,7 @@
             {
                 "nombre": "Basmati",
                 "precio": "1.20",
-                "sitio": "carrefour",
+                "marca": "brillante",
                 "descripcion": "para microondas"
             },
             {
@@ -27,6 +28,7 @@
     {
         "produc": "Pasta",
         "genero": "pastas",
+        "sitio": "carrefour",
         "items": [{
                 "nombre": "Espirales",
                 "precio": "0.60"
@@ -50,7 +52,6 @@
             {
                 "nombre": "Nidos",
                 "precio": "0.70",
-                "sitio": "carrefour",
                 "descripcion": "para hacerlos con carne"
 
             }
@@ -351,7 +352,12 @@
 
             },
             {
-                "nombre": "mole sin corteza",
+                "nombre": "molde sin corteza",
+                "precio": "1.00",
+                "descripcion": "pequeño"
+            },
+            {
+                "nombre": "molde integral",
                 "precio": "1.00",
                 "descripcion": "pequeño"
             }
@@ -359,6 +365,130 @@
 
         ]
 
+    },
+    {
+        "produc": "picos",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "de pan",
+            "precio": "2.05",
+            "descripcion": "200g"
+
+        }]
+
+    },
+    {
+        "produc": "regañadas",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "de pan",
+            "precio": "2.05",
+            "descripcion": "200g"
+
+        }]
+
+    },
+    {
+        "produc": "galletas",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "tostadas",
+            "precio": "0.90",
+            "descripcion": "200g"
+
+        }]
+
+    },
+    {
+        "produc": "galletas",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "Campurrianas Cuétara",
+            "precio": "2.45",
+            "descripcion": "400g"
+
+        }]
+
+    },
+    {
+        "produc": "galletas",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "maria",
+            "precio": "1.00",
+            "descripcion": "800g"
+
+        }]
+
+    },
+    {
+        "produc": "galletas",
+        "genero": "pan y galletas",
+        "items": [{
+            "nombre": "saladas",
+            "precio": "1.00",
+            "descripcion": "800g"
+
+        }]
+
+    },
+    {
+        "produc": "leche",
+        "genero": "lacteos y huevos",
+        "items": [{
+                "nombre": "entera",
+                "precio": "0.60"
+            },
+            {
+                "nombre": "semi",
+                "precio": "0.75"
+            },
+            {
+                "nombre": "desnatada",
+                "precio": "0.75"
+            },
+            {
+                "nombre": "sin lactosa",
+                "precio": "0.90"
+            }
+        ]
+
+    },
+    {
+        "produc": "yogures",
+        "genero": "lacteos y huevos",
+        "items": [{
+                "nombre": "variados",
+                "precio": "1.90",
+                "descripcion": "16"
+            },
+            {
+                "nombre": "natural",
+                "precio": "0.90",
+                "descripcion": "8"
+            },
+            {
+                "nombre": "desnatado con trozos",
+                "precio": "0.90",
+                "descripcion": "4"
+            },
+            {
+                "nombre": "biofrutas",
+                "precio": "0.95",
+                "descripcion": "4"
+            }
+
+
+        ]
+    },
+    {
+        "produc": "huevos",
+        "genero": "lacteos y huevos",
+        "items": [{
+            "nombre": "variados",
+            "precio": "1.39",
+            "descripcion": "docena"
+        }]
     }
 
 

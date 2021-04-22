@@ -1,9 +1,19 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>listProducGenere</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
-
+    <ion-list class="margin-btn__20vh">
+        <ion-item *ngFor="let dta of DtaServiceProduc | async">
+            <ion-label>
+                {{dta.produc}}
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll threshold="100%" position="bottom" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content loadingSpinner="crescent">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
 </ion-content>
