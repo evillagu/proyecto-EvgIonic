@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable} from 'rxjs';
+import { Navigation } from 'src/app/models-interfaces/navegacion';
 import { GeneralService } from 'src/app/services/general.service';
-import { Navigation} from '../../models-interfaces/navegacion';
+
 
 @Component({
   selector: 'app-home',

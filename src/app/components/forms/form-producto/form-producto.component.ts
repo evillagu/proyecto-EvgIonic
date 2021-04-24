@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DataFromProduc } from '../../../models-interfaces/fromProduc';
+
 import { NgForm } from '@angular/forms';
-import { GeneralService } from '../../../services/general.service';
+import { DataFromProduc } from 'src/app/models-interfaces/fromProduc';
+import { GeneralService } from 'src/app/services/general.service';
+
 
 @Component({
   selector: 'app-form-producto',

@@ -1,8 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable} from 'rxjs';
-import { DataService } from '../../../services/data.service';
-import { Products } from '../../../models-interfaces/producs';
+
+
 import { IonInfiniteScroll } from '@ionic/angular';
+import { Products } from 'src/app/models-interfaces/producs';
+import { DataService } from 'src/app/services/data.service';
+import { DataFromExample } from '../../../../../../aplication-front/src/app/models/fromExample';
 
 @Component({
   selector: 'app-list-produc-genere',
@@ -20,6 +23,7 @@ export class ListProducGenerePage implements OnInit {
   ngOnInit() {
     this.DtaServiceProduc = this.dataService.getData();
     this.dataService.getData().subscribe(console.log);
+    
   }
   loadData( event){
     this.inifiteScroll.complete();

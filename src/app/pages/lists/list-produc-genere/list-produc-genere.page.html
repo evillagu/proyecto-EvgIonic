@@ -6,9 +6,9 @@
 
 <ion-content>
     <ion-list class="margin-btn__5px" *ngFor="let dta of DtaServiceProduc | async">
-        <div class="displayFlex-row">
+        <div class="displayFlex-row margin-left__5porcen">
             <ion-avatar class="margin-0-10">
-                <img src="../../../../assets/img/icon-product/arroz.jpg">
+                <img src={{dta.icon}}>
             </ion-avatar>
             <h2 class="text-subtitle">{{dta.genero}}</h2>
         </div>
@@ -17,14 +17,14 @@
             <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
                 <div class="displayFlex-column">
                     <ion-label slot="start">
-                        <h2 class="text-subtitle">{{dtaItems.nombre}}</h2>
+                        <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
                         <span>{{dtaItems.marca}}</span>
                     </ion-label>
                     <ion-label>
-                        <span>{{dtaItems.descripcion}}</span>
+                        <span class="text-min">{{dtaItems.descripcion}}</span>
                     </ion-label>
                 </div>
-                <span>{{dtaItems.precio}}€</span>
+                <span class="text-precio">{{dtaItems.precio}}€</span>
             </ion-card>
         </ion-item>
 

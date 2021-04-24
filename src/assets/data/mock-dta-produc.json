@@ -2,6 +2,7 @@
 
         "genero": "arroz",
         "sitio": "carrefour",
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
         "items": [{
                 "nombre": "Arroz Largo",
                 "precio": "0.80"
@@ -30,6 +31,7 @@
     {
         "genero": "pastas",
         "sitio": "carrefour",
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
         "items": [{
                 "nombre": "Pasta Espirales",
                 "precio": "0.60"
@@ -63,6 +65,7 @@
     {
 
         "genero": "Legumbres",
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
         "items": [{
                 "nombre": "Garbanzo grano",
                 "precio": "1.50"
@@ -110,6 +113,7 @@
 
     {
         "genero": "aceites-vinagres",
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
         "items": [{
                 "nombre": "aceites girasol",
                 "precio": "1.25",
@@ -140,6 +144,7 @@
     },
     {
         "genero": "salsas-tomates",
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
         "items": [{
                 "nombre": "Tomate frito pack 3",
                 "precio": "0.95"
@@ -172,6 +177,7 @@
     {
 
         "genero": "especias-sazonadores",
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
         "items": [{
                 "nombre": "Orégano triturado",
                 "precio": "0.45"
@@ -204,6 +210,7 @@
     {
 
         "genero": "Harinas-Levaduras",
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
         "items": [{
                 "nombre": "levadura caja",
                 "precio": "1.20"
@@ -220,6 +227,7 @@
 
     {
         "genero": "sales-azucar",
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
         "items": [{
                 "nombre": "sal marina",
                 "precio": "0.25"
@@ -251,6 +259,7 @@
 
     {
         "genero": "pan-galletas",
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
         "items": [{
                 "nombre": "pan molde",
                 "precio": "1.00",
@@ -309,6 +318,7 @@
     },
     {
         "genero": "lacteos-huevos",
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
         "items": [{
                 "nombre": "leche entera",
                 "precio": "0.60"
@@ -328,22 +338,22 @@
             {
                 "nombre": "yogures variados",
                 "precio": "1.90",
-                "descripcion": "16"
+                "descripcion": "16uds"
             },
             {
                 "nombre": "yogures natural",
                 "precio": "0.90",
-                "descripcion": "8"
+                "descripcion": "8uds"
             },
             {
                 "nombre": "yogures desnatado con trozos",
                 "precio": "0.90",
-                "descripcion": "4"
+                "descripcion": "4uds"
             },
             {
                 "nombre": "yogures biofrutas",
                 "precio": "0.95",
-                "descripcion": "4"
+                "descripcion": "4uds"
             },
             {
                 "nombre": "huevos",

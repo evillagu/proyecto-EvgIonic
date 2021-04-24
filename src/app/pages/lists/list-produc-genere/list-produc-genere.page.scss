@@ -2,6 +2,32 @@
     width: 100%;
     min-height: 30px;
     padding: 10px;
-    background: rgba(74, 138, 132, 0.479);
-    color: #3e3e3e;
+    background: #060606d6;
+    ion-label {
+        width: 150px;
+        padding: 1px;
+        white-space: break-spaces;
+        .text-minTitle {
+            color: cadetblue;
+            letter-spacing: 0.4px;
+        }
+        .text-min {
+            color: #dedede;
+            letter-spacing: 0.4px;
+        }
+    }
+    .text-precio {
+        color: #dedede;
+        margin-top: 5px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0px;
+        bottom: 0px;
+        width: 15px;
+        height: 15px;
+        background: linear-gradient( -45deg, white 45%, #aaa 50%, #ccc 60%, white);
+    }
 }
