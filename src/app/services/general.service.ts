@@ -19,12 +19,11 @@ export class GeneralService {
     return this.http.get<Navigation[]>('/assets/data/redirects-routing.json');
 
   }
-  
   getDtaFrom(){
     return this.dataFrom;
   }
   addDtaFrom(data: DataFromProduc ){
     this.dataFrom.push(data);
   }
-  
+
 }
