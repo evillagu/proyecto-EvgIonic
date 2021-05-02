@@ -1,34 +1,34 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>listProducGenere</ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content>
-    <ion-list class="margin-btn__5px" *ngFor="let dta of DtaServiceProduc | async">
-        <div class="displayFlex-row margin-left__5porcen">
-            <ion-avatar class="margin-0-10">
-                <img src={{dta.icon}}>
-            </ion-avatar>
-            <h2 class="text-subtitle">{{dta.genero}}</h2>
-        </div>
+    <ion-menu-toggle auto-hide="false" class="first-menu"></ion-menu-toggle>
+    <div *ngFor="let dtaService of dtaServicePlace | async">
+        <ion-list class="margin-btn__5px" *ngFor="let dta; let i=index of dtaService.products" (click)="levelNav1('navX'+i)" [ngClass]="{active: isNav1Displayed('navX'+i)}">
+            <div class="displayFlex-row  position-relative">
+                <ion-avatar class="margin-0-10">
+                    <img src={{dta.icon}}>
+                </ion-avatar>
+                <h2 class="text-subtitle">{{dta.genero | titlecase}}</h2>
+                <ion-icon class="position-absolute position-absolute__centerTop right0" [name]="isNav1Displayed('navX'+i) ? 'chevron-down-outline' : 'chevron-forward-outline'" slot="end"></ion-icon>
+            </div>
 
-        <ion-item *ngFor="let dtaItems of dta.items">
-            <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
-                <div class="displayFlex-column">
-                    <ion-label slot="start">
-                        <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
-                        <span>{{dtaItems.marca}}</span>
-                    </ion-label>
-                    <ion-label>
-                        <span class="text-min">{{dtaItems.descripcion}}</span>
-                    </ion-label>
-                </div>
-                <span class="text-precio">{{dtaItems.precio}}€</span>
-            </ion-card>
-        </ion-item>
+            <div *ngIf="isNav1Displayed('navX'+i)">
+                <ion-item *ngFor="let dtaItems of dta.items">
+                    <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
+                        <div class="displayFlex-column">
+                            <ion-label slot="start">
+                                <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
+                                <span>{{dtaItems.marca}}</span>
+                            </ion-label>
+                            <ion-label>
+                                <span class="text-min">{{dtaItems.descripcion}}</span>
+                            </ion-label>
+                        </div>
+                        <span class="text-precio">{{dtaItems.precio}}€</span>
+                    </ion-card>
+                </ion-item>
+            </div>
 
-    </ion-list>
+        </ion-list>
+    </div>
 
     <ion-infinite-scroll threshold="100%" position="bottom" (ionInfinite)="loadData($event)">
         <ion-infinite-scroll-content loadingSpinner="crescent">

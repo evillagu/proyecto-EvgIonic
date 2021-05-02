@@ -19,6 +19,18 @@
             }
         }
     }
+    .position {
+        &-absolute {
+            position: absolute;
+            &__centerTop {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-relative {
+            position: relative;
+        }
+    }
     .textAlign {
         text-align: center;
     }
