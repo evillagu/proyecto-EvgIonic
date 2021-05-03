@@ -31,6 +31,7 @@ const routes: Routes = [
     path: 'list-produc-espe',
     loadChildren: () => import('./pages/lists/list-produc-espe/list-produc-espe.module').then( m => m.ListProducEspePageModule)
   },
+  
 ];
 
 @NgModule({

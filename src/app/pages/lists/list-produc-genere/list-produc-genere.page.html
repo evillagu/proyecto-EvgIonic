@@ -10,7 +10,7 @@
                 <ion-icon class="position-absolute position-absolute__centerTop right0" [name]="isNav1Displayed('navX'+i) ? 'chevron-down-outline' : 'chevron-forward-outline'" slot="end"></ion-icon>
             </div>
 
-            <div *ngIf="isNav1Displayed('navX'+i)">
+            <div *ngIf="isNav1Displayed('navX'+i)" (click)="eventActionSheet()" routerLinkActive="router-link-active">
                 <ion-item *ngFor="let dtaItems of dta.items">
                     <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
                         <div class="displayFlex-column">

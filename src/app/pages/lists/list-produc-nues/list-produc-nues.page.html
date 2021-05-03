@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>listProducNues</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="background-tabs">
+    <div *ngFor="let dtaService of dtaServicePlace | async">
+        <div class="color-ramdon margin-15">
+            <ion-button class="tabs2__btn-color" (click)="onClickbtn()" expand="block" fill="clear" shape="round">
+                {{dtaService.sitio}}
+            </ion-button>
+        </div>
+    </div>
 </ion-content>

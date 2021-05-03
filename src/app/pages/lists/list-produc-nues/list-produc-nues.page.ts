@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Places } from 'src/app/models-interfaces/supermercados';
+import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-list-produc-nues',
   templateUrl: './list-produc-nues.page.html',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListProducNuesPage implements OnInit {
 
-  constructor() { }
+  
+  dtaServicePlace : Observable<Places[]>;
+  
+  constructor( private dataService: DataService) { }
 
   ngOnInit() {
+    this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
+      response = response.filter((data) => data.sitio.toLowerCase() !== "general");
+      return response;
+      }));
+      
   }
+  onClickbtn(){
+    alert("prueba");
+  }
+
+  
 
 }
