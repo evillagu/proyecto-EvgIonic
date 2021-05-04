@@ -2,8 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable} from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
-
-import { ActionSheetController, IonInfiniteScroll } from '@ionic/angular';
+import { ActionSheetController, IonInfiniteScroll, IonList } from '@ionic/angular';
 import { Products } from 'src/app/models-interfaces/producs';
 import { DataService } from 'src/app/services/data.service';
 import { DataFromExample } from '../../../../../../aplication-front/src/app/models/fromExample';
@@ -18,6 +17,7 @@ import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/templa
 export class ListProducGenerePage implements OnInit {
 
   @ViewChild(IonInfiniteScroll) inifiteScroll: IonInfiniteScroll;
+  @ViewChild(IonList) ionlist: IonList;
 
   dtaServiceProduc : Observable<Products[]>;
   dtaServicePlace : Observable<Places[]>;
@@ -42,7 +42,7 @@ export class ListProducGenerePage implements OnInit {
   }
   eventActionSheet(){
     this.selectMenu = false;
-    this.presentActionSheet();
+    
   }
   levelNav1(navX: string) {
     if (this.isNav1Displayed(navX)) {
@@ -77,37 +77,32 @@ export class ListProducGenerePage implements OnInit {
     this.menuLevel1 = null;
     this.menuLevel2 = null;
   }
+  optionDelete(dta: any, dtaServ: any){
+
+   this.ionlist.closeSlidingItems();
+  }
+  optionEdit(dta: any, dtaServ: any){
+    this.presentActionSheet();
+    this.ionlist.closeSlidingItems();
+  }
+  optionList(dta: any, dtaServ: any){
+    
+    this.ionlist.closeSlidingItems();
+  }
   
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtr.create({
-      header: 'Albums',
-      cssClass: 'my-custom-class',
+      header: 'Realmente desea eliminar',
+      cssClass: 'product-actionSheet',
+      backdropDismiss: false,
       buttons: [{
-        text: 'Delete',
-        role: 'destructive',
-        icon: 'trash',
+        text: 'Eliminar',
+        role: 'delete',
+        icon: 'trash-outline',
         handler: () => {
           console.log('Delete clicked');
         }
-      }, {
-        text: 'Share',
-        icon: 'share',
-        handler: () => {
-          console.log('Share clicked');
-        }
-      }, {
-        text: 'Play (open modal)',
-        icon: 'caret-forward-circle',
-        handler: () => {
-          console.log('Play clicked');
-        }
-      }, {
-        text: 'Favorite',
-        icon: 'heart',
-        handler: () => {
-          console.log('Favorite clicked');
-        }
-      }, {
+      },{
         text: 'Cancel',
         icon: 'close',
         role: 'cancel',
@@ -121,4 +116,4 @@ export class ListProducGenerePage implements OnInit {
     const { role } = await actionSheet.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
   }
-}
+ }

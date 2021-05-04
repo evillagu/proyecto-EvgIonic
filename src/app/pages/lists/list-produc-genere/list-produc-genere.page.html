@@ -11,20 +11,38 @@
             </div>
 
             <div *ngIf="isNav1Displayed('navX'+i)" (click)="eventActionSheet()" routerLinkActive="router-link-active">
-                <ion-item *ngFor="let dtaItems of dta.items">
-                    <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
-                        <div class="displayFlex-column">
-                            <ion-label slot="start">
-                                <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
-                                <span>{{dtaItems.marca}}</span>
-                            </ion-label>
-                            <ion-label>
-                                <span class="text-min">{{dtaItems.descripcion}}</span>
-                            </ion-label>
-                        </div>
-                        <span class="text-precio">{{dtaItems.precio}}€</span>
-                    </ion-card>
-                </ion-item>
+                <ion-item-sliding *ngFor="let dtaItems of dta.items">
+                    <ion-item-options side="start">
+                        <ion-item-option class="tabs-option-sliding" (click)="optionEdit(dtaItems, dta.genero )">
+
+                            <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+                            <span>editar</span>
+                        </ion-item-option>
+                        <ion-item-option class="tabs-option-sliding" color="danger" (click)="optionDelete(dtaItems , dta.genero)">
+                            <ion-icon name="trash-outline"></ion-icon>
+                            <span>eliminar</span>
+                        </ion-item-option>
+                        <ion-item-option class="tabs-option-sliding" color="success" (click)="optionList(dtaItems , dta.genero)">
+                            <ion-icon name="list-circle-outline"></ion-icon>
+                            <span>mis listas</span>
+                        </ion-item-option>
+                    </ion-item-options>
+                    <ion-item>
+
+                        <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
+                            <div class="displayFlex-column">
+                                <ion-label slot="start">
+                                    <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
+                                    <span>{{dtaItems.marca}}</span>
+                                </ion-label>
+                                <ion-label>
+                                    <span class="text-min">{{dtaItems.descripcion}}</span>
+                                </ion-label>
+                            </div>
+                            <span class="text-precio">{{dtaItems.precio}}€</span>
+                        </ion-card>
+                    </ion-item>
+                </ion-item-sliding>
             </div>
 
         </ion-list>

@@ -13,4 +13,7 @@ export class DataService {
   getData(){
     return this.http.get<Places[]>('/assets/data/mock-dta-produc.json');
   }
+  deleteData(){
+    
+  }
 }
