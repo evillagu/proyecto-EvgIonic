@@ -1,13 +1,14 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { Observable} from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
-import { ActionSheetController, IonInfiniteScroll, IonList } from '@ionic/angular';
+import { ActionSheetController, AlertController, IonInfiniteScroll, IonList, ModalController } from '@ionic/angular';
 import { Products } from 'src/app/models-interfaces/producs';
 import { DataService } from 'src/app/services/data.service';
 import { DataFromExample } from '../../../../../../aplication-front/src/app/models/fromExample';
 import { Places } from 'src/app/models-interfaces/supermercados';
 import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/template';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 @Component({
   selector: 'app-list-produc-genere',
@@ -25,7 +26,12 @@ export class ListProducGenerePage implements OnInit {
   menuLevel1 = null;
   menuLevel2 = null;
   selectMenu = true;
-  constructor( private dataService: DataService,private actionSheetCtr :ActionSheetController) { }
+  constructor( 
+    private dataService: DataService,
+    private actionSheetCtr :ActionSheetController, 
+    private alertController: AlertController, 
+    public modalController: ModalController
+  ) { }
 
   ngOnInit() {
     
@@ -78,19 +84,22 @@ export class ListProducGenerePage implements OnInit {
     this.menuLevel2 = null;
   }
   optionDelete(dta: any, dtaServ: any){
-
-   this.ionlist.closeSlidingItems();
+    this.ionlist.closeSlidingItems();
+    this.deleteActionSheet();
+   
   }
   optionEdit(dta: any, dtaServ: any){
-    this.presentActionSheet();
     this.ionlist.closeSlidingItems();
+    this.editAlertPrompt();
+    
   }
   optionList(dta: any, dtaServ: any){
-    
     this.ionlist.closeSlidingItems();
+    this.listasModal();
+    
   }
   
-  async presentActionSheet() {
+  async deleteActionSheet() {
     const actionSheet = await this.actionSheetCtr.create({
       header: 'Realmente desea eliminar',
       cssClass: 'product-actionSheet',
@@ -99,12 +108,14 @@ export class ListProducGenerePage implements OnInit {
         text: 'Eliminar',
         role: 'delete',
         icon: 'trash-outline',
+        cssClass:'btn-affirmation',
         handler: () => {
           console.log('Delete clicked');
         }
       },{
         text: 'Cancel',
         icon: 'close',
+        cssClass: 'btn-red',
         role: 'cancel',
         handler: () => {
           console.log('Cancel clicked');
@@ -116,4 +127,68 @@ export class ListProducGenerePage implements OnInit {
     const { role } = await actionSheet.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
   }
- }
+  async editAlertPrompt() {
+    const alert = await this.alertController.create({
+      cssClass: 'alert-form',
+      backdropDismiss: false,
+      header: 'Editar Producto',
+      inputs: [
+        {
+          name: 'nombre',
+          type: 'text',
+           // value: 'hello', se debe meter el dato del nombre
+          placeholder: 'Nombre producto'
+        },
+        {
+          name: 'precio',
+          type: 'text',
+          id: 'name2-id',
+          // value: 'hello', se debe meter el dato del precio
+          placeholder: 'Precio'
+        },
+        {
+          name: 'marca',
+          type: 'text',
+          id: 'name2-id',
+          // value: 'hello', se debe meter el dato del precio
+          placeholder: 'Marca'
+        },
+        {
+          name: 'descripcion',
+          type: 'text',
+          id: 'name2-id',
+          // value: 'hello', se debe meter el dato del precio
+          placeholder: 'Descripcion'
+        }],
+        buttons: [
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            cssClass: 'btn-red',
+            handler: () => {
+              console.log('Confirm Cancel');
+            }
+          }, {
+            text: 'Ok',
+            cssClass:'btn-affirmation',
+            handler: () => {
+              console.log('Confirm Ok');
+            }
+          }
+        ]
+      });
+  
+      await alert.present();
+  }
+  async listasModal() {
+    const modal = await this.modalController.create({
+      component: ModalComponent,
+      componentProps:{
+        nombre: 'pepiro',
+        pais : 'prueba'
+      },
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+}

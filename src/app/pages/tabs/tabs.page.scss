@@ -13,6 +13,9 @@ ion-tabs.tabs-produc {
             color: azure;
             border: solid .3px white;
         }
+        &-color-span {
+            color: black;
+        }
     }
     .tab-selected {
         background: rgb(107, 107, 107);

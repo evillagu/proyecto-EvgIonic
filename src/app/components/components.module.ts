@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { FormProductoComponent } from './forms/form-producto/form-producto.component';
 import { HeaderComponent } from './header/header.component';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 
 
@@ -15,11 +16,13 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     HeaderComponent,
-    FormProductoComponent
+    FormProductoComponent,
+     ModalComponent
   ],
   exports :[
     HeaderComponent,
-    FormProductoComponent
+    FormProductoComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
