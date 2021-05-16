@@ -1,5 +1,5 @@
 ion-tabs.tabs-produc {
-    top: 76px;
+    top: 65px;
     .tabs {
         &-bar {
             height: 75px;
@@ -21,5 +21,33 @@ ion-tabs.tabs-produc {
         background: rgb(107, 107, 107);
         color: var(--ion-color-secondary);
         border-bottom: 5px solid var(--ion-color-secondary);
+    }
+}
+
+.fab-tabs {
+    top: 35px;
+    .btn-fab-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .list-fab-tabs {
+        right: -30%;
+        top: -33px;
+        ion-card {
+            width: 50vw;
+            height: 22vh;
+            padding: 10px;
+            background: #0000001f;
+            border-radius: 22px;
+            ion-fab-button {
+                width: auto;
+                margin-bottom: 5px;
+                button {
+                    background: #000000a6;
+                    color: white;
+                    padding: 28px;
+                }
+            }
+        }
     }
 }

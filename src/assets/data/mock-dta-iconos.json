@@ -1,0 +1,43 @@
+[{
+        "id": "1",
+        "icon": "../../../../assets/img/icon-product/arroz.jpg"
+    },
+    {
+        "id": "2",
+        "icon": "../../../../assets/img/icon-product/pasta.jpg"
+    },
+    {
+        "id": "3",
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg"
+    },
+    {
+        "id": "4",
+        "icon": "../../../../assets/img/icon-product/aceites.jpg"
+    },
+    {
+        "id": "5",
+        "icon": "../../../../assets/img/icon-product/salsas.jpg"
+    },
+    {
+        "id": "6",
+        "icon": "../../../../assets/img/icon-product/especias.jpg"
+    },
+    {
+        "id": "7",
+        "icon": "../../../../assets/img/icon-product/harina.jpg"
+    },
+    {
+        "id": "8",
+        "icon": "../../../../assets/img/icon-product/sal.jpg"
+    },
+
+    {
+        "id": "9",
+        "icon": "../../../../assets/img/icon-product/pan.jpg"
+    },
+    {
+        "id": "10",
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg"
+    }
+
+]

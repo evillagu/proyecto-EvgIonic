@@ -38,33 +38,33 @@
                 "productsId": "2",
                 "items": [{
                         "iditems": "5",
-                        "nombre": "Pasta Espirales",
+                        "nombre": "Espirales",
                         "precio": "0.60"
                     },
                     {
 
                         "iditems": "6",
-                        "nombre": "Pasta Macarrones",
+                        "nombre": "Macarrones",
                         "precio": "0.45"
                     },
                     {
                         "iditems": "7",
-                        "nombre": "Pasta Espaguetis",
+                        "nombre": "Espaguetis",
                         "precio": "0.45"
                     },
                     {
                         "iditems": "8",
-                        "nombre": "Pasta Tallarines",
+                        "nombre": "Tallarines",
                         "precio": "0.75"
                     },
                     {
                         "iditems": "9",
-                        "nombre": "Pasta Figuras",
+                        "nombre": "Figuras",
                         "precio": "0.70"
                     },
                     {
                         "iditems": "10",
-                        "nombre": "Pasta Nidos",
+                        "nombre": "Nidos",
                         "precio": "0.70",
                         "descripcion": "para hacerlos con carne"
 

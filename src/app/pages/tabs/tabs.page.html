@@ -1,5 +1,24 @@
 <app-header titulo="PRODUCTOS">
 </app-header>
+<ion-fab class="fab-tabs" vertical="top" horizontal="end">
+    <ion-fab-button class="btn-fab-icon">
+        <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list class="list-fab-tabs" side="button">
+        <ion-card>
+            <ion-fab-button>
+                <button (click)="createGenero()">
+                    Tipo de Producto
+                </button>
+            </ion-fab-button>
+            <ion-fab-button>
+                <button (click)="createproducto()">
+                    Crear Producto
+                </button>
+            </ion-fab-button>
+        </ion-card>
+    </ion-fab-list>
+</ion-fab>
 <ion-tabs class="tabs-produc" mode="md">
     <ion-tab-bar class="tabs-bar" slot="top">
         <ion-tab-button class="tabs-btn" tab="producgenere">

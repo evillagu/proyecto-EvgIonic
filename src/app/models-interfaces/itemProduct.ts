@@ -1,6 +1,6 @@
 export interface ItemProducts{
-nombre?: string;
-precio?: string;
+nombre: string;
+precio?: number;
 marca? :string;
 descripcion?: string;
 }

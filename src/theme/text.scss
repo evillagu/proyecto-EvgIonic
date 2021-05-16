@@ -1,8 +1,14 @@
 .general {
     .text {
-        &-subtitle {
+        &-title {
             font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        &-subtitle {
+            font-size: 18px;
             font-weight: bold
         }
         &-min {

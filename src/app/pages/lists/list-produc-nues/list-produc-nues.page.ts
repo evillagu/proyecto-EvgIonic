@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Places } from 'src/app/models-interfaces/supermercados';
+import { Places } from 'src/app/models-interfaces/supermarkets';
 import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-list-produc-nues',

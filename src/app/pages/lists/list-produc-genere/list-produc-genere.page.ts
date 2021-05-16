@@ -6,7 +6,7 @@ import { ActionSheetController, AlertController, IonInfiniteScroll, IonList, Mod
 import { Products } from 'src/app/models-interfaces/producs';
 import { DataService } from 'src/app/services/data.service';
 import { DataFromExample } from '../../../../../../aplication-front/src/app/models/fromExample';
-import { Places } from 'src/app/models-interfaces/supermercados';
+import { Places } from 'src/app/models-interfaces/supermarkets';
 import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/template';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 
