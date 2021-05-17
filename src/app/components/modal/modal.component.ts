@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { ModalController, NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { Places } from 'src/app/models-interfaces/supermarkets';
 import { DataService } from 'src/app/services/data.service';
@@ -18,21 +18,27 @@ export class ModalComponent implements OnInit {
   @Input() modalProduc: boolean;
   @Input() modalGenero: boolean;
   @Input() modalLists: boolean;
+  @Input() modalEditGenero: boolean;
 
   dtaServicePlace : Observable<Places[]>;
-  menuLevel1 = null;
-  menuLevel2 = null;
-  selectMenu = true;
-
-  constructor(
+  
+  responseData : any; 
+  selectedValue: any;
+  constructor(public navCtrl: NavController,
     public modalController: ModalController,
-    private dataService: DataService) { }
+    private dataService: DataService
+    ) { }
 
   ngOnInit() {
     this.resService();
   }
   closeModal(){
       this.modalController.dismiss();
+      console.log(this.modalEditGenero);
+      if(this.modalEditGenero){
+        // aqui vendria la funcion que haria para llevar datos al rest
+        this.modalEditGenero = false
+      }
   }
   resService(){
     this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
@@ -41,39 +47,10 @@ export class ModalComponent implements OnInit {
       }));
       // this.dtaServicePlace.subscribe(console.log)
   }
-  eventActionSheet(){
-    this.selectMenu = false;
-    
-  }
-  levelNav1(navX: string) {
-    if (this.isNav1Displayed(navX)) {
-      if(this.selectMenu){
-        this.menuLevel1 = null;
-      }
-    } else {
-      this.menuLevel1 = navX;
-    }
-    this.selectMenu = true;
-  }
-
-  isNav1Displayed(navX: string) {
-    
-    return this.menuLevel1 === navX;
-  }
-
-  levelNav2(navX: string) {
-    if (this.isNav2Displayed(navX)) {
-      this.menuLevel2 = null;
-    } else {
-      this.menuLevel1 = navX;
-      this.menuLevel2 = navX;
-    }
-  }
-
-  isNav2Displayed(navX: string) {
-    return this.menuLevel2 === navX;
-  }
-
+ 
+  checkValue(event){ 
+    console.log(event.detail.value)
+  };
 }
 
 

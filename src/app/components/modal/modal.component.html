@@ -17,23 +17,26 @@
     </ion-list>
 </ion-content>
 <ion-content *ngIf="modalGenero">
+
     <ion-card>
+        <p class="ion-padding">Modificar</p>
+        <ion-item>
+            <ion-label></ion-label>
+            <ion-select placeholder="Tipo" *ngFor="let dtaService of dtaServicePlace | async" (ionChange)="checkValue($event)">
+                <ion-select-option *ngFor="let dta; let i=index of dtaService.products" [value]="dta">{{dta.genero}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <p class="ion-padding">Nuevo</p>
         <ion-item>
             <ion-label position="floating">Nombre</ion-label>
             <ion-input></ion-input>
         </ion-item>
     </ion-card>
-    <ion-card>
-        <p>Modificar</p>
-        <ion-item>
-            <ion-label>Tipo</ion-label>
-            <ion-select *ngFor="let dtaService of dtaServicePlace | async">
-                <div *ngFor="let dta; let i=index of dtaService.products">
-                    <ion-select-option value={{dta.genero}}>{{dta.genero}}</ion-select-option>
-                </div>
-            </ion-select>
-        </ion-item>
-    </ion-card>
+</ion-content>
+<ion-content *ngIf="modalEditGenero">
+
 </ion-content>
 <ion-content *ngIf="modalProduc">
     <ion-item>

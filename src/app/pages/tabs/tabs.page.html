@@ -7,8 +7,13 @@
     <ion-fab-list class="list-fab-tabs" side="button">
         <ion-card>
             <ion-fab-button>
+                <button (click)="editGenero()">
+                    Editar Tipo
+                </button>
+            </ion-fab-button>
+            <ion-fab-button>
                 <button (click)="createGenero()">
-                    Tipo de Producto
+                    Crear Tipo
                 </button>
             </ion-fab-button>
             <ion-fab-button>
@@ -17,6 +22,7 @@
                 </button>
             </ion-fab-button>
         </ion-card>
+
     </ion-fab-list>
 </ion-fab>
 <ion-tabs class="tabs-produc" mode="md">

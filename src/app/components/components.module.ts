@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { FormProductoComponent } from './forms/form-producto/form-producto.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { AcorrdionComponent } from './acorrdion/acorrdion.component';
 
 
 
@@ -17,17 +18,20 @@ import { ModalComponent } from 'src/app/components/modal/modal.component';
   declarations: [
     HeaderComponent,
     FormProductoComponent,
-     ModalComponent
+     ModalComponent,
+     AcorrdionComponent
   ],
   exports :[
     HeaderComponent,
     FormProductoComponent,
-    ModalComponent
+    ModalComponent,
+    AcorrdionComponent
   ],
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule
+    FormsModule,
+    
   ]
 })
 export class ComponentsModule { }

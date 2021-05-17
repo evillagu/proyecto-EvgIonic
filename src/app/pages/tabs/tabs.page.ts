@@ -16,20 +16,33 @@ export class TabsPage implements OnInit {
   ngOnInit() {
   }
 
-  createGenero(){
-    
+  createGenero(){ 
     this.createModalGenero();
   }
-  createproducto(){
-    
-    this.createModalProducto()
-
+  editGenero(){
+  this.EditModalGenero();
   }
+  createproducto(){
+    this.createModalProducto()
+  }
+  
   async createModalGenero() {
     const modal = await this.modalController.create({
       component: ModalComponent,
       componentProps:{
        modalGenero: true,
+       titulo: 'Tipo de Producto',
+       descricion: 'El tipo, es el genero de alimentos como arroz, pasta, legumbres.......  '
+      },
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+  async EditModalGenero() {
+    const modal = await this.modalController.create({
+      component: ModalComponent,
+      componentProps:{
+       modalEditGenero: true,
        titulo: 'Tipo de Producto',
        descricion: 'El tipo, es el genero de alimentos como arroz, pasta, legumbres.......  '
       },
