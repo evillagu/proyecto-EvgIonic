@@ -6,9 +6,11 @@
             flex-direction: row;
             &__center {
                 justify-content: center;
+                align-items: center;
             }
             &__justi-around {
                 justify-content: space-around;
+                align-items: center;
             }
         }
         &-column {
@@ -18,6 +20,12 @@
                 justify-content: center;
             }
         }
+    }
+    .display-none {
+        display: none;
+    }
+    .display-block {
+        display: block;
     }
     .position {
         &-absolute {
@@ -33,5 +41,8 @@
     }
     .textAlign {
         text-align: center;
+    }
+    .w50 {
+        width: 50%;
     }
 }

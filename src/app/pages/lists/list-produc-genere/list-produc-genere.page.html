@@ -2,11 +2,11 @@
     <ion-menu-toggle auto-hide="false" class="first-menu"></ion-menu-toggle>
     <div *ngFor="let dtaService of dtaServicePlace | async">
         <ion-list class="margin-btn__5px" *ngFor="let dta; let i=index of dtaService.products" (click)="levelNav1('navX'+i)" [ngClass]="{active: isNav1Displayed('navX'+i)}">
-            <div class="displayFlex-row  position-relative">
+            <div class="displayFlex-row displayFlex-row__justi-around  position-relative">
                 <ion-avatar class="margin-0-10">
                     <img src={{dta.icon}}>
                 </ion-avatar>
-                <h2 class="text-title">{{dta.genero | titlecase}}</h2>
+                <h2 class="text-title list-title">{{dta.genero | titlecase}}</h2>
                 <ion-icon class="position-absolute position-absolute__centerTop right0" [name]="isNav1Displayed('navX'+i) ? 'chevron-down-outline' : 'chevron-forward-outline'" slot="end"></ion-icon>
             </div>
 

@@ -15,27 +15,78 @@
             <ion-label>Awesome Label</ion-label>
         </ion-item>
     </ion-list>
+    <!-- <ion-toolbar>
+        <ion-searchbar class="margin-top__10px" placeholder="buscar tipo....." (ionChange)="filterTipo($event)" [debounce]="250" showCancelButton="always" animated color="tertiary" type="country-name">
+        </ion-searchbar>
+    </ion-toolbar> -->
+    <!-- <ion-card class="card-text-filter" *ngFor="let dtaService of dtaServicePlace | async">
+        <ion-list *ngFor="let dta; let i=index of dtaService.products | filtro: textFilter">
+            <div class="displayFlex-row displayFlex-row__justi-around display-none">
+                <ion-label>{{dta.genero}}</ion-label>
+                <ion-avatar>
+                    <img src={{dta.icon}}>
+                </ion-avatar>
+            </div>
+        </ion-list>
+
+    </ion-card> -->
+
 </ion-content>
 <ion-content *ngIf="modalGenero">
-
+    <ion-card class="displayFlex-row">
+        <ion-item>
+            <ion-label placeholder="Tipo" position="floating">{{tipoGenero}}</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-avatar>
+                <img src={{iconGenero}}>
+            </ion-avatar>
+        </ion-item>
+    </ion-card>
+</ion-content>
+<ion-content class="conten-editGenero" *ngIf="modalEditGenero">
+    <div class="displayFlex-row displayFlex-row__justi-around">
+        <p class="margin-left__5porcen">Modificar</p>
+        <ion-icon slot="start" name="create-sharp"></ion-icon>
+    </div>
     <ion-card>
-        <p class="ion-padding">Modificar</p>
+        <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
         <ion-item>
             <ion-label></ion-label>
-            <ion-select placeholder="Tipo" *ngFor="let dtaService of dtaServicePlace | async" (ionChange)="checkValue($event)">
+            <ion-select class="select-text padding-5" placeholder="Tipo" *ngFor="let dtaService of dtaServicePlace | async" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
                 <ion-select-option *ngFor="let dta; let i=index of dtaService.products" [value]="dta">{{dta.genero}}</ion-select-option>
             </ion-select>
         </ion-item>
+
     </ion-card>
     <ion-card>
-        <p class="ion-padding">Nuevo</p>
-        <ion-item>
-            <ion-label position="floating">Nombre</ion-label>
+        <ion-item class="mrgBtn-label">
+            <ion-label placeholder="Tipo" position="floating">{{textSelect}}</ion-label>
             <ion-input></ion-input>
         </ion-item>
+        <ion-item class="padding-10">
+            <ion-avatar>
+                <img src={{iconGenero}}>
+            </ion-avatar>
+            <ion-select class="select-text padding-5" placeholder="" (ionChange)="valueIcon($event)" [(ngModel)]='evalueIcon'>
+                <ion-select-option *ngFor="let dataIcons of dtaIcons" [value]="dataIcons">
+                    <ion-avatar>
+                        <img src={{iconGenero}}>
+                    </ion-avatar>
+                </ion-select-option>
+            </ion-select>
+        </ion-item>
     </ion-card>
-</ion-content>
-<ion-content *ngIf="modalEditGenero">
+
+    <!-- <ion-card class="card-text-filter">
+        <div class="displayFlex-row__justi-around padding-0">
+            <ion-label>{{textSelect}}</ion-label>
+            <ion-avatar>
+                <img src={{iconGenero}}>
+            </ion-avatar>
+        </div>
+    </ion-card> -->
 
 </ion-content>
 <ion-content *ngIf="modalProduc">
@@ -49,11 +100,11 @@
         </ion-select>
     </ion-item>
 </ion-content>
-<div class="displayFlex modal-footer-btn">
-    <ion-button class="btn-red" (click)="closeModal()" expand="block" fill="clear" shape="round">
+<div class="displayFlex displayFlex-row__center modal-footer-btn">
+    <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
         Cancelar
     </ion-button>
-    <ion-button class="btn-affirmation" (click)="closeModal()" expand="block" fill="clear" shape="round">
+    <ion-button class="btn-affirmation" (click)="closeModal()" shape="round" fill="outline" fill="clear">
         Aceptar
     </ion-button>
 </div>

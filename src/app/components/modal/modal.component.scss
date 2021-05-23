@@ -6,3 +6,23 @@
     margin-top: 30px;
     padding: 0 15px;
 }
+
+.conten-editGenero {
+    .card-text-filter {
+        // height: 50px;
+        div {
+            padding: 5px;
+            ion-avatar {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    ion-select.select-text {
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .mrgBtn-label {
+        margin-bottom: 22px;
+    }
+}

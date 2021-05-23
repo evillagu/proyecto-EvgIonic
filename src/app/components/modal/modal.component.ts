@@ -1,9 +1,12 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ModalController, NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { Places } from 'src/app/models-interfaces/supermarkets';
 import { DataService } from 'src/app/services/data.service';
 import { map, filter } from 'rxjs/operators';
+import { IonSelect } from '@ionic/angular';
+import { Icons } from '../../models-interfaces/supermarkets';
+
 
 
 @Component({
@@ -21,23 +24,41 @@ export class ModalComponent implements OnInit {
   @Input() modalEditGenero: boolean;
 
   dtaServicePlace : Observable<Places[]>;
+  dtaIcons = new Array<Icons[]>();
+  evalueSelectGenero: any;
+  evalueIcon: any;
+
+  tipoGenero: any;
+  iconGenero: any;
   
   responseData : any; 
   selectedValue: any;
+
+  textFilter= '';
+  textSelect: any;
+  iconSelect:any;
+
   constructor(public navCtrl: NavController,
     public modalController: ModalController,
     private dataService: DataService
-    ) { }
+    
+    ) { 
+      this.tipoGenero = "Escriba Tipo....";
+      this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
+      
+    }
 
   ngOnInit() {
     this.resService();
+    this.resIcon();
+    console.log(this.resIcon());
   }
+  
   closeModal(){
       this.modalController.dismiss();
-      console.log(this.modalEditGenero);
       if(this.modalEditGenero){
         // aqui vendria la funcion que haria para llevar datos al rest
-        this.modalEditGenero = false
+        this.modalEditGenero = false;
       }
   }
   resService(){
@@ -47,10 +68,40 @@ export class ModalComponent implements OnInit {
       }));
       // this.dtaServicePlace.subscribe(console.log)
   }
- 
+  resIcon(){
+
+   this.dataService.getDtaIcon().subscribe((data: any[])=>{
+    this.dtaIcons = data;
+    } );
+  }
+  
   checkValue(event){ 
-    console.log(event.detail.value)
+
+    this.evalueSelectGenero = event.detail.value;
+    this.textSelect = this.evalueSelectGenero.genero;
+    this.iconGenero = this.evalueSelectGenero.icon;
+  
+    
   };
+  resectSelect(){
+    this.evalueSelectGenero = null;
+    this.evalueIcon = null;
+    this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
+    
+  }
+  valueIcon(event){
+    
+    this.evalueIcon = event.detail.value;
+    console.log(this.evalueIcon)
+    this.iconGenero = this.evalueIcon.icon;
+  }
+  filterTipo(event){
+    const filterText = event.target.value;
+    this.textFilter = filterText;
+      
+  }
+
+  
 }
 
 

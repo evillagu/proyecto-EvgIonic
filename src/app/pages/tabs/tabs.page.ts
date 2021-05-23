@@ -32,7 +32,7 @@ export class TabsPage implements OnInit {
       componentProps:{
        modalGenero: true,
        titulo: 'Tipo de Producto',
-       descricion: 'El tipo, es el genero de alimentos como arroz, pasta, legumbres.......  '
+       descricion: 'El tipo es el genero de alimentos como arroz, pasta, legumbres.......  '
       },
       cssClass: 'my-custom-class'
     });
@@ -44,7 +44,7 @@ export class TabsPage implements OnInit {
       componentProps:{
        modalEditGenero: true,
        titulo: 'Tipo de Producto',
-       descricion: 'El tipo, es el genero de alimentos como arroz, pasta, legumbres.......  '
+       descricion: 'El tipo es el genero de alimentos (arroz, pasta, legumbres.......)  '
       },
       cssClass: 'my-custom-class'
     });
@@ -56,7 +56,7 @@ export class TabsPage implements OnInit {
       componentProps:{
         modalProduc: true,
         titulo: 'Crea un producto Nuevo',
-        descricion: 'El producto, es aquel como arroz largo, pasta macarrones'   
+        descricion: 'El producto es la clase de género (arroz largo, pasta macarrones.....)'   
       },
       cssClass: 'my-custom-class'
     });

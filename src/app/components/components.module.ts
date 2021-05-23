@@ -9,6 +9,7 @@ import { FormProductoComponent } from './forms/form-producto/form-producto.compo
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 import { AcorrdionComponent } from './acorrdion/acorrdion.component';
+import { PipeFilterModule } from '../pipes/pipes.module';
 
 
 
@@ -18,8 +19,8 @@ import { AcorrdionComponent } from './acorrdion/acorrdion.component';
   declarations: [
     HeaderComponent,
     FormProductoComponent,
-     ModalComponent,
-     AcorrdionComponent
+    ModalComponent,
+    AcorrdionComponent
   ],
   exports :[
     HeaderComponent,
@@ -31,6 +32,7 @@ import { AcorrdionComponent } from './acorrdion/acorrdion.component';
     CommonModule,
     IonicModule,
     FormsModule,
+    PipeFilterModule
     
   ]
 })
