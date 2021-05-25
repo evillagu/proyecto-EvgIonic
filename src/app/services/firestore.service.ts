@@ -27,4 +27,11 @@ export class FirestoreService {
     const collection = this.dtaFireBase.collection(path);
     return collection.doc(id).update(data);
   }
+  getCollection<tipo>(path: string){
+    const collection = this.dtaFireBase.collection<tipo>(path);
+    return collection.valueChanges();
+  }
+  getId(){
+    return this.dtaFireBase.createId();
+  }
 }

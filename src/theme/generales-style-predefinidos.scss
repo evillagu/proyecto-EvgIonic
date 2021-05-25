@@ -2,4 +2,12 @@
     .action-sheet-title.sc-ion-action-sheet-md {
         text-align: center;
     }
+    .action-sheet-button.ion-activatable.ion-focusable.action-sheet-delete.btn-delete-sheet.sc-ion-action-sheet-ios {
+        background: var(--ion-color-danger) !important;
+        color: var(--ion-color-danger-contrast) !important;
+    }
+    .alert-button.ion-focusable.ion-activatable.alert-button-role-cancel.btn-red.sc-ion-alert-md {
+        background: var(--ion-color-danger) !important;
+        color: var(--ion-color-danger-contrast) !important;
+    }
 }

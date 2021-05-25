@@ -1,4 +1,4 @@
-<ion-card>
+<ion-card class="margin-top__10porcen padding-10">
     <div class="modal-header">
         <h1 class="text-title">
             {{titulo}}
@@ -46,7 +46,7 @@
     </ion-card>
 </ion-content>
 <ion-content class="conten-editGenero" *ngIf="modalEditGenero">
-    <div class="displayFlex-row displayFlex-row__justi-around">
+    <div class="displayFlex-row displayFlex-row__justi-around margin-btn__-15">
         <p class="margin-left__5porcen">Modificar</p>
         <ion-icon slot="start" name="create-sharp"></ion-icon>
     </div>
@@ -78,29 +78,9 @@
             </ion-select>
         </ion-item>
     </ion-card>
-
-    <!-- <ion-card class="card-text-filter">
-        <div class="displayFlex-row__justi-around padding-0">
-            <ion-label>{{textSelect}}</ion-label>
-            <ion-avatar>
-                <img src={{iconGenero}}>
-            </ion-avatar>
-        </div>
-    </ion-card> -->
-
 </ion-content>
-<ion-content *ngIf="modalProduc">
-    <ion-item>
-        <ion-label>Select</ion-label>
-        <ion-select>
-            <ion-select-option value="brown">Brown</ion-select-option>
-            <ion-select-option value="blonde">Blonde</ion-select-option>
-            <ion-select-option value="black">Black</ion-select-option>
-            <ion-select-option value="red">Red</ion-select-option>
-        </ion-select>
-    </ion-item>
-</ion-content>
-<div class="displayFlex displayFlex-row__center modal-footer-btn">
+
+<div class="displayFlex displayFlex-row__center margin-btn__35px">
     <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
         Cancelar
     </ion-button>

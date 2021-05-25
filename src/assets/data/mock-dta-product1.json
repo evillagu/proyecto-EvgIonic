@@ -1,0 +1,2605 @@
+[{
+        "sitio": "Eroski",
+        "idSitio": "2",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "5",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        "sitio": "dia",
+        "idSitio": "3",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        "sitio": "Supersol",
+        "idSitio": "4",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        "sitio": "Mercadona",
+        "idSitio": "5",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        "sitio": "Alcampo",
+        "idSitio": "6",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        "sitio": "Carrefour",
+        "idSitio": "4",
+        "products": [{
+                "genero": "arroz",
+                "icon": "../../../../assets/img/icon-product/arroz.jpg",
+                "productsId": "1",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Arroz Largo",
+                        "precio": "0.80"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Arroz Redondo",
+                        "precio": "1.10"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Arroz Basmati",
+                        "precio": "1.20",
+                        "marca": "brillante",
+                        "descripcion": "para microondas"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Arroz integral",
+                        "precio": "1.55"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "pastas",
+                "icon": "../../../../assets/img/icon-product/pasta.jpg",
+                "productsId": "2",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Pasta Espirales",
+                        "precio": "0.60"
+                    },
+                    {
+
+                        "iditems": "2",
+                        "nombre": "Pasta Macarrones",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Pasta Espaguetis",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Pasta Tallarines",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Pasta Figuras",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Pasta Nidos",
+                        "precio": "0.70",
+                        "descripcion": "para hacerlos con carne"
+
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "Legumbres",
+                "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+                "productsId": "3",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Garbanzo grano",
+                        "precio": "1.50"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Garbanzo cosido",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Lentejas grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Lentejas cosido",
+                        "precio": "1.00"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Alubia blancas grano",
+                        "precio": "1.65"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Alubia blancas cosido",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "Alubia rojas grano",
+                        "precio": "1.80"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "Alubia rojas cosido",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "Alubia pinta grano",
+                        "precio": "1.90"
+                    },
+                    {
+                        "iditems": "10",
+                        "nombre": "Alubia pinta cosido",
+                        "precio": "0.80"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "aceites-vinagres",
+                "icon": "../../../../assets/img/icon-product/aceites.jpg",
+                "productsId": "4",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "aceites girasol",
+                        "precio": "1.25",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "oliva",
+                        "precio": "2.35",
+                        "descripcion": "1lt"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "girasol",
+                        "precio": "5.80",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": " oliva",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "vinagre manzana",
+                        "precio": "10,50",
+                        "descripcion": "5lt"
+                    }
+
+                ]
+            },
+            {
+                "genero": "salsas-tomates",
+                "icon": "../../../../assets/img/icon-product/salsas.jpg",
+                "productsId": "5",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Tomate frito pack 3",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Tomate frito tarro",
+                        "precio": "0.75",
+                        "descripcion": "550ml"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "Kétchup tarro",
+                        "precio": "0.80",
+                        "descripcion": "560ml"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Mayonesa tarro",
+                        "precio": "1.10",
+                        "descripcion": "450ml"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Guacamole tarro",
+                        "precio": "1.65",
+                        "descripcion": "200g"
+                    }
+
+                ]
+
+            },
+            {
+
+                "genero": "especias-sazonadores",
+                "icon": "../../../../assets/img/icon-product/especias.jpg",
+                "productsId": "6",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "Orégano triturado",
+                        "precio": "0.45"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "ajo triturado",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "laurel hoja",
+                        "precio": "0.55"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "curry triturado",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "Perejil triturado",
+                        "precio": "0.70"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "Romero triturado",
+                        "precio": "1.00"
+                    }
+
+
+                ]
+
+            },
+            {
+
+                "genero": "Harinas-Levaduras",
+                "icon": "../../../../assets/img/icon-product/harina.jpg",
+                "productsId": "7",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "levadura caja",
+                        "precio": "1.20"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "Harina caja",
+                        "precio": "0.80"
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "sales-azucar",
+                "icon": "../../../../assets/img/icon-product/sal.jpg",
+                "productsId": "8",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "sal marina",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "sal gruesa",
+                        "precio": "0.25"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "sal yodada",
+                        "precio": "0.65"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "Bicarbonato sódico",
+                        "precio": "0.50"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "azucar moreno",
+                        "precio": "0.95"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "azucar blanca",
+                        "precio": "0.73"
+                    }
+
+                ]
+
+            },
+            {
+                "genero": "pan-galletas",
+                "icon": "../../../../assets/img/icon-product/pan.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "pan molde",
+                        "precio": "1.00",
+                        "descripcion": "grande"
+
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "pan molde sin corteza",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "pan molde integral",
+                        "precio": "1.00",
+                        "descripcion": "pequeño"
+                    }, {
+                        "iditems": "4",
+                        "nombre": "picos de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "regañadas de pan",
+                        "precio": "2.05",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "galletas tostadas",
+                        "precio": "0.90",
+                        "descripcion": "200g"
+
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "galletas Campurrianas Cuétara",
+                        "precio": "2.45",
+                        "descripcion": "400g"
+
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "galletas maria",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "galletas saladas",
+                        "precio": "1.00",
+                        "descripcion": "800g"
+
+                    }
+
+
+                ]
+
+            },
+            {
+                "genero": "lacteos-huevos",
+                "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+                "productsId": "9",
+                "items": [{
+                        "iditems": "1",
+                        "nombre": "leche entera",
+                        "precio": "0.60"
+                    },
+                    {
+                        "iditems": "2",
+                        "nombre": "leche semi",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "3",
+                        "nombre": "leche desnatada",
+                        "precio": "0.75"
+                    },
+                    {
+                        "iditems": "4",
+                        "nombre": "leche sin lactosa",
+                        "precio": "0.90"
+                    },
+                    {
+                        "iditems": "5",
+                        "nombre": "yogures variados",
+                        "precio": "1.90",
+                        "descripcion": "16uds"
+                    },
+                    {
+                        "iditems": "6",
+                        "nombre": "yogures natural",
+                        "precio": "0.90",
+                        "descripcion": "8uds"
+                    },
+                    {
+                        "iditems": "7",
+                        "nombre": "yogures desnatado con trozos",
+                        "precio": "0.90",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "8",
+                        "nombre": "yogures biofrutas",
+                        "precio": "0.95",
+                        "descripcion": "4uds"
+                    },
+                    {
+                        "iditems": "9",
+                        "nombre": "huevos",
+                        "precio": "1.39",
+                        "descripcion": "docena"
+                    }
+                ]
+
+            }
+        ]
+    }
+]

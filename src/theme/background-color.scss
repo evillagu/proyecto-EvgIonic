@@ -5,13 +5,4 @@
             background-image: repeating-linear-gradient(-45deg, rgb(112, 112, 112), #47b1cc 20px, transparent 40px), repeating-linear-gradient(45deg, rgb(112, 112, 112), firebrick 20px, transparent 40px);
         }
     }
-    .btn-red {
-        background: var(--ion-color-danger);
-        color: var(--ion-color-danger-contrast);
-    }
-    .btn-affirmation {
-        background: var(--ion-color-danger-contrast);
-        color: var(--ion-color-danger);
-        border: 1px solid var(--ion-color-danger);
-    }
 }

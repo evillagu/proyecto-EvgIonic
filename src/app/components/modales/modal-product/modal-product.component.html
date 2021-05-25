@@ -1,0 +1,44 @@
+<ion-card class="margin-top__10porcen padding-10">
+    <div class="modal-header">
+        <h1 class="text-title">
+            {{titulo}}
+        </h1>
+        <h3 class="text-min">
+            {{descricion}}
+        </h3>
+    </div>
+</ion-card>
+<ion-content *ngIf="modalProduc">
+    <ion-card>
+        <ion-item>
+            <ion-label placeholder="Nombre del producto" position="floating" type="text" size="20">Nombre del producto</ion-label>
+            <ion-input [(ngModel)]="newProduc.nombre"></ion-input>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-label placeholder="Marca del producto" position="floating" type="text" size="20">Marca del producto</ion-label>
+            <ion-input [(ngModel)]="newProduc.marca"></ion-input>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-label placeholder="Descripcion del Produto" position="floating" type="text" size="20">Descripcion del Produto</ion-label>
+            <ion-input [(ngModel)]="newProduc.descripcion"></ion-input>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-label placeholder="Precio del Produto" position="floating" type="text" size="20">Precio del Produto</ion-label>
+            <ion-input [(ngModel)]="newProduc.precio" type="number" value="0"></ion-input>
+        </ion-item>
+    </ion-card>
+</ion-content>
+<div class="displayFlex displayFlex-row__center margin-btn__35px">
+    <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
+        Cancelar
+    </ion-button>
+    <ion-button class="btn-affirmation" (click)="guardarItemProduc()" shape="round" fill="outline" fill="clear">
+        Aceptar
+    </ion-button>
+</div>

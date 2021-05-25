@@ -5,7 +5,7 @@ import { Places } from 'src/app/models-interfaces/supermarkets';
 import { DataService } from 'src/app/services/data.service';
 import { map, filter } from 'rxjs/operators';
 import { IonSelect } from '@ionic/angular';
-import { Icons } from '../../models-interfaces/supermarkets';
+import { Icons } from '../../../models-interfaces/supermarkets';
 
 
 
@@ -18,7 +18,6 @@ export class ModalComponent implements OnInit {
 
   @Input() titulo: string;
   @Input() descricion: string;
-  @Input() modalProduc: boolean;
   @Input() modalGenero: boolean;
   @Input() modalLists: boolean;
   @Input() modalEditGenero: boolean;
@@ -45,7 +44,7 @@ export class ModalComponent implements OnInit {
     ) { 
       this.tipoGenero = "Escriba Tipo....";
       this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
-      
+      this.textSelect = "cambiar nombre"
     }
 
   ngOnInit() {
@@ -87,7 +86,7 @@ export class ModalComponent implements OnInit {
     this.evalueSelectGenero = null;
     this.evalueIcon = null;
     this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
-    
+    this.textSelect = "cambiar nombre"
   }
   valueIcon(event){
     

@@ -1,20 +1,31 @@
 .general {
     // botones
-    .btn-clear {
-        padding: 5px;
-        border-radius: 50%;
-        background: black;
-        position: relative;
-        width: 20px;
-        height: 20px;
-        &::before {
-            content: "x";
-            position: absolute;
-            color: white;
-            top: 50%;
-            left: 50%;
-            font-size: 13px;
-            transform: translate(-50%, -50%);
+    .btn {
+        &-clear {
+            padding: 5px;
+            border-radius: 50%;
+            background: black;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            &::before {
+                content: "x";
+                position: absolute;
+                color: white;
+                top: 50%;
+                left: 50%;
+                font-size: 13px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-red {
+            background: var(--ion-color-danger);
+            color: var(--ion-color-danger-contrast);
+        }
+        &-affirmation {
+            background: var(--ion-color-danger-contrast);
+            color: var(--ion-color-danger);
+            border: 1px solid var(--ion-color-danger);
         }
     }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonList, ModalController } from '@ionic/angular';
-import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { ModalProductComponent } from 'src/app/components/modales/modal-product/modal-product.component';
+import { ModalComponent } from 'src/app/components/modales/modal/modal.component';
 
 
 @Component({
@@ -41,6 +42,7 @@ export class TabsPage implements OnInit {
   async EditModalGenero() {
     const modal = await this.modalController.create({
       component: ModalComponent,
+      mode:"md",
       componentProps:{
        modalEditGenero: true,
        titulo: 'Tipo de Producto',
@@ -52,7 +54,8 @@ export class TabsPage implements OnInit {
   }
   async createModalProducto() {
     const modal = await this.modalController.create({
-      component: ModalComponent,
+      component: ModalProductComponent,
+      mode:"md",
       componentProps:{
         modalProduc: true,
         titulo: 'Crea un producto Nuevo',
