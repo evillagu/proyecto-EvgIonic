@@ -1,16 +1,10 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
-import { Observable} from 'rxjs';
-import { map, filter } from 'rxjs/operators';
-
 import { ActionSheetController, AlertController, IonInfiniteScroll, IonList, ModalController } from '@ionic/angular';
-import { Products } from 'src/app/models-interfaces/producs';
-import { DataService } from 'src/app/services/data.service';
-import { DataFromExample } from '../../../../../../aplication-front/src/app/models/fromExample';
-import { Places } from 'src/app/models-interfaces/supermarkets';
-import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/template';
 import { ModalComponent } from 'src/app/components/modales/modal/modal.component';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { ItemProducts } from 'src/app/models-interfaces/itemProduct';
+import { Products } from 'src/app/models-interfaces/producs';
+import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-list-produc-genere',
@@ -22,26 +16,26 @@ export class ListProducGenerePage implements OnInit {
   @ViewChild(IonInfiniteScroll) inifiteScroll: IonInfiniteScroll;
   @ViewChild(IonList) ionlist: IonList;
 
-  dtaServiceProduc : Observable<Products[]>;
-  dtaServicePlace : Observable<Places[]>;
   imgAvatar : string;
   menuLevel1 = null;
   menuLevel2 = null;
   selectMenu = true;
 
-  super : Places[] = [];
+  productos: Products[] = [];
+  itemProduts: ItemProducts[]= [];
+  itemProAccordeon: ItemProducts[]= [];
   newProduc: ItemProducts = {
     nombre: '',
+    genero:'',
     precio: null,
     marca: '',
     descripcion: '',
     id: this.dtaBaseFire.getId()
   }
  
-  private pathSuper= "super/";
-  private pathItemProduc= "itemProduct/"
+  private pathItemProduc= "item-products/";
+  private pathProducts = "productos/"
   constructor( 
-    private dataService: DataService,
     private actionSheetCtr :ActionSheetController, 
     private alertController: AlertController, 
     public modalController: ModalController,
@@ -49,13 +43,8 @@ export class ListProducGenerePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    
-    this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
-      response = response.filter((data) => data.sitio.toLowerCase() === "general");
-      return response;
-      }));
-      this.getItemProduc();
-    // this.dtaServicePlace.subscribe(console.log)
+      this.getProduc();
+      this.getItemProducts();
   }
   loadData( event){
     this.inifiteScroll.complete();
@@ -66,7 +55,7 @@ export class ListProducGenerePage implements OnInit {
     this.selectMenu = false;
     
   }
-  levelNav1(navX: string) {
+  levelNav1(navX: string, dtaIdItem : string) {
     if (this.isNav1Displayed(navX)) {
       if(this.selectMenu){
         this.menuLevel1 = null;
@@ -75,6 +64,7 @@ export class ListProducGenerePage implements OnInit {
       this.menuLevel1 = navX;
     }
     this.selectMenu = true;
+    this.getItemAccordeon(dtaIdItem);
   }
 
   isNav1Displayed(navX: string) {
@@ -99,24 +89,32 @@ export class ListProducGenerePage implements OnInit {
     this.menuLevel1 = null;
     this.menuLevel2 = null;
   }
-  optionDelete(produc: ItemProducts, dtaServ: any){
+  optionDelete(produc: ItemProducts){
     this.ionlist.closeSlidingItems();
     this.deleteActionSheet(produc);
    
   }
-  optionEdit(produc: ItemProducts, dtaServ: any){
+  optionEdit(produc: ItemProducts){
     this.ionlist.closeSlidingItems();
     this.editAlertPrompt(produc);
     
   }
-  optionList(dta: any, dtaServ: any){
+  optionList(dta: any){
     this.ionlist.closeSlidingItems();
     this.listasModal();
     
   }
-  getItemProduc() {
-    this.dtaBaseFire.getCollection<Places>(this.pathSuper).subscribe(
-      res => { this.super = res });
+  getProduc() {
+    this.dtaBaseFire.getCollection<Products>(this.pathProducts).subscribe(
+      res => { this.productos = res });
+  }
+  getItemProducts(){
+    this.dtaBaseFire.getCollection<ItemProducts>(this.pathItemProduc).subscribe(
+      res => { this.itemProduts = res });
+  }
+  getItemAccordeon(dtaIdItem: string){
+    this.itemProAccordeon = this.itemProduts.filter( dta => dta.genero === dtaIdItem);
+    
   }
  
   async deleteActionSheet(produc: ItemProducts) {

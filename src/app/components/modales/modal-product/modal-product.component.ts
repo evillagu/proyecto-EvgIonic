@@ -18,6 +18,7 @@ export class ModalProductComponent implements OnInit {
   products: ItemProducts[] = [];
   newProduc: ItemProducts = {
     nombre: '',
+    genero:'',
     precio: null,
     marca: '',
     descripcion: '',

@@ -16,10 +16,10 @@ export class ListProducNuesPage implements OnInit {
   constructor( private dataService: DataService) { }
 
   ngOnInit() {
-    this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
-      response = response.filter((data) => data.sitio.toLowerCase() !== "general");
-      return response;
-      }));
+    // this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
+    //   response = response.filter((data) => data.sitio.toLowerCase() !== "general");
+    //   return response;
+    //   }));
       
   }
   onClickbtn(){

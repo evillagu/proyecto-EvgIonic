@@ -1,39 +1,20 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, AfterViewInit, Input, ViewChild,  ElementRef, Renderer2 } from "@angular/core";
 
 @Component({
   selector: 'app-acorrdion',
   templateUrl: './acorrdion.component.html',
   styleUrls: ['./acorrdion.component.scss'],
 })
-export class AcorrdionComponent implements OnInit {
+export class AcorrdionComponent implements AfterViewInit {
 
-   @Input()
-   name : string;
+  @ViewChild("expandWrapper", { read: ElementRef }) expandWrapper: ElementRef;
+  @Input("expanded") expanded: boolean = false;
+  @Input("expandHeight") expandHeight: string = "150px";
 
-   @Input()
-   description : string;
+  constructor(public renderer: Renderer2) {}
 
-   @Input()
-   image : string;
- 
-   @Output()
-   change : EventEmitter<string> = new EventEmitter<string>();
- 
-
-   public isMenuOpen : boolean = false;
-   constructor() { }
-   ngOnInit() {
-   }
- 
-
-   public toggleAccordion() : void
-   {
-       this.isMenuOpen = !this.isMenuOpen;
-   }
-
-   public broadcastName(name : string) : void
-   {
-      this.change.emit(name);
-   }
+  ngAfterViewInit() {
+    this.renderer.setStyle(this.expandWrapper.nativeElement, "max-height", this.expandHeight);
+  }
  
  }

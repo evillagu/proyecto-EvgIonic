@@ -12,7 +12,7 @@ export class FirestoreService {
     const collection = this.dtaFireBase.collection(path);
     return collection.doc(id).set(data);
   }
-
+  //meteodo para un elemento.
   getDoc(path: string, id: string) {
     const collection = this.dtaFireBase.collection(path);
     return collection.doc(id).valueChanges();
@@ -31,6 +31,7 @@ export class FirestoreService {
     const collection = this.dtaFireBase.collection<tipo>(path);
     return collection.valueChanges();
   }
+  // crea el id, automaticamente.
   getId(){
     return this.dtaFireBase.createId();
   }

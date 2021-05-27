@@ -32,19 +32,6 @@
     </ion-card> -->
 
 </ion-content>
-<ion-content *ngIf="modalGenero">
-    <ion-card class="displayFlex-row">
-        <ion-item>
-            <ion-label placeholder="Tipo" position="floating">{{tipoGenero}}</ion-label>
-            <ion-input></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-avatar>
-                <img src={{iconGenero}}>
-            </ion-avatar>
-        </ion-item>
-    </ion-card>
-</ion-content>
 <ion-content class="conten-editGenero" *ngIf="modalEditGenero">
     <div class="displayFlex-row displayFlex-row__justi-around margin-btn__-15">
         <p class="margin-left__5porcen">Modificar</p>
@@ -54,31 +41,38 @@
         <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
         <ion-item>
             <ion-label></ion-label>
-            <ion-select class="select-text padding-5" placeholder="Tipo" *ngFor="let dtaService of dtaServicePlace | async" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
-                <ion-select-option *ngFor="let dta; let i=index of dtaService.products" [value]="dta">{{dta.genero}}</ion-select-option>
+            <ion-select class="select-text padding-5" placeholder="Tipo" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
+                <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
             </ion-select>
         </ion-item>
 
     </ion-card>
-    <ion-card>
-        <ion-item class="mrgBtn-label">
-            <ion-label placeholder="Tipo" position="floating">{{textSelect}}</ion-label>
-            <ion-input></ion-input>
-        </ion-item>
-        <ion-item class="padding-10">
-            <ion-avatar>
-                <img src={{iconGenero}}>
-            </ion-avatar>
-            <ion-select class="select-text padding-5" placeholder="" (ionChange)="valueIcon($event)" [(ngModel)]='evalueIcon'>
+    <div #boxActive>
+        <ion-card>
+            <ion-item>
+                <ion-label placeholder="Tipo" position="floating">{{textSelect}}</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label placeholder="Tipo" position="floating">{{textSelectSitio}}</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item class="padding-10">
+                <ion-avatar>
+                    <img src={{iconGenero}}>
+                </ion-avatar>
+                <!-- <ion-select class="select-text padding-5" placeholder="" (ionChange)="valueIcon($event)" [(ngModel)]='evalueIcon'>
                 <ion-select-option *ngFor="let dataIcons of dtaIcons" [value]="dataIcons">
                     <ion-avatar>
                         <img src={{iconGenero}}>
                     </ion-avatar>
                 </ion-select-option>
-            </ion-select>
-        </ion-item>
-    </ion-card>
+            </ion-select> -->
+            </ion-item>
+        </ion-card>
+    </div>
 </ion-content>
+
 
 <div class="displayFlex displayFlex-row__center margin-btn__35px">
     <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">

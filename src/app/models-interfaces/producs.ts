@@ -1,8 +1,9 @@
 import { ItemProducts } from './itemProduct';
 
 export interface Products{
-    genero?: string;
+    id:string;
+    sitio:string;
     icon?:string;
-    items?: ItemProducts[];
+    nombre:string;
 }
 

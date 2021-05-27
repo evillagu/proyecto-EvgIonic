@@ -38,4 +38,10 @@ export class DataService {
   getDtaIcon(){
     return this.http.get<Icons[]>(`${this.rutaIcon}`).pipe(retry(3), catchError(this.handleError));
   }
+  // este es un ejemplo para hacer la llamada de un servicio
+   // this.dtaServicePlace = this.dataService.getData().pipe(map((response) => {
+    //   response = response.filter((data) => data.sitio.toLowerCase() === "general");
+    //   return response;
+    //   }));
+    // this.dtaServicePlace.subscribe(console.log)
 }

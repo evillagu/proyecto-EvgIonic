@@ -15,10 +15,10 @@ export class FiltroPipe implements PipeTransform {
     if(text.length === 0){
       return product;
     }
-    text.toLocaleLowerCase();
-    return product.filter((filProduc)=>{
-      return filProduc.genero.toLocaleLowerCase().includes(text);
-    });
+    // text.toLocaleLowerCase();
+    // return product.filter((filProduc)=>{
+    //   return filProduc.genero.toLocaleLowerCase().includes(text);
+    // });
     
     
   }
