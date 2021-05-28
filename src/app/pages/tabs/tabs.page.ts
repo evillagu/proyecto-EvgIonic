@@ -31,7 +31,7 @@ export class TabsPage implements OnInit {
     const modal = await this.modalController.create({
       component: ModalComponent,
       componentProps:{
-       modalGenero: true,
+       modalCreateGenero: true,
        titulo: 'Tipo de Producto',
        descricion: 'El tipo es el genero de alimentos como arroz, pasta, legumbres.......  '
       },
@@ -57,7 +57,7 @@ export class TabsPage implements OnInit {
       component: ModalProductComponent,
       mode:"md",
       componentProps:{
-        modalProduc: true,
+        modalcreateItemProduc: true,
         titulo: 'Crea un producto Nuevo',
         descricion: 'El producto es la clase de género (arroz largo, pasta macarrones.....)'   
       },

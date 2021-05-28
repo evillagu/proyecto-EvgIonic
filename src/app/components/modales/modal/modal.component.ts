@@ -1,11 +1,9 @@
 import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ModalController, NavController } from '@ionic/angular';
-import { Icons } from '../../../models-interfaces/supermarkets';
+import { Icons, Places } from '../../../models-interfaces/supermarkets';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { Products } from 'src/app/models-interfaces/producs';
-
-
-
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 
 @Component({
   selector: 'app-modal',
@@ -16,27 +14,31 @@ export class ModalComponent implements OnInit {
 
   @Input() titulo: string;
   @Input() descricion: string;
-  @Input() modalGenero: boolean;
-  @Input() modalLists: boolean;
+  @Input() modalCreateGenero: boolean;
   @Input() modalEditGenero: boolean;
   @ViewChild('boxActive', { static: false }) divActive: ElementRef;
+  
 
   evalueSelectGenero: any;
-  evalueIcon: any;
-
+  evalueSelectsitio: any;
+  evalueSelectIcon: any;
   tipoGenero: any;
-  iconGenero: any;
-
-  responseData: any;
-  selectedValue: any;
-
-  textFilter = '';
+  srcIcon: any;
+  iconGenero: string;
   textSelect: any;
   iconSelect: any;
+  idSelect: any;
   textSelectSitio: any;
+  nombreEdit: string;
+  nombreCrear: string;
+  
 
   productos: Products[] = [];
+  sitios: Places[] = [];
+  icons: Icons[]= [];
   private pathProducts = "productos/"
+  private pathSitios = "sitios/"
+  private pathIconos = "iconos/"
 
   newProduc: Products = {
     id: this.dtaBaseFire.getId(),
@@ -49,27 +51,48 @@ export class ModalComponent implements OnInit {
     public navCtrl: NavController,
     public modalController: ModalController,
     public dtaBaseFire: FirestoreService,
-    private renderer:Renderer2
+    private renderer: Renderer2,
+    public formBuilder: FormBuilder
   ) {
     this.tipoGenero = "Escriba Tipo....";
-    this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
-    this.textSelect = "cambiar nombre",
-    this.textSelectSitio = "cambiar el lugar donde esta"
-    
+    this.iconGenero = "../../../../"
+    this.textSelect = "cambiar nombre";
+    this.textSelectSitio = "especifico";
+
   }
 
   ngOnInit() {
     this.resService();
-    this.noActive();
-  }
-
-  closeModal() {
-    this.modalController.dismiss();
+    this.resServiceSitos();
+    this.resServiceIcons();
     if (this.modalEditGenero) {
-      // aqui vendria la funcion que haria para llevar datos al rest
+    setTimeout(() => {
+      this.noActive(this.divActive);
+      // this.noActive(this.cardActive);
+    }, 100);
+  }
+    
+  }
+ 
+  closeModal() {
+
+    if (this.modalEditGenero) {
       this.modalEditGenero = false;
     }
+    if (this.modalCreateGenero) {
+      this.modalCreateGenero = false;
+    }
+    this.modalController.dismiss();
   }
+  resServiceSitos() {
+    this.dtaBaseFire.getCollection<Places>(this.pathSitios).subscribe(
+      res => { this.sitios = res });
+  }
+  resServiceIcons() {
+    this.dtaBaseFire.getCollection<Icons>(this.pathIconos).subscribe(
+      res => { this.icons = res });
+  }
+
   resService() {
     this.dtaBaseFire.getCollection<Products>(this.pathProducts).subscribe(
       res => { this.productos = res });
@@ -82,36 +105,65 @@ export class ModalComponent implements OnInit {
 
     this.evalueSelectGenero = event.detail.value;
     this.textSelect = this.evalueSelectGenero.nombre;
-    this.iconGenero = this.evalueSelectGenero.icon;
+    this.srcIcon = this.evalueSelectGenero.icon;
     this.textSelectSitio = this.evalueSelectGenero.sitio;
-    this.active();
-
-
+    this.idSelect = this.evalueSelectGenero.id;
+    this.nombreEdit = this.textSelect;
+    this.active(this.divActive);
   };
   resectSelect() {
-    
+
     this.evalueSelectGenero = null;
-    this.evalueIcon = null;
+    this.evalueSelectIcon = null;
     this.iconGenero = "../../../../assets/img/icon-product/blanco.jpg";
     this.textSelect = "cambiar nombre";
-    this.textSelectSitio = "cambiar el lugar donde esta";
-    this.noActive();
+    this.textSelectSitio = "especifico";
+    setTimeout(() => {
+      this.noActive(this.divActive);
+    }, 100);
   }
-  valueIcon(event) {
+ 
+  btnAceptarModal() {
+    if (this.modalEditGenero) {
+      this.newProduc = {
+        id: this.idSelect,
+        sitio: this.textSelectSitio,
+        icon: this.srcIcon,
+        nombre: this.nombreEdit,
+      }
 
-    this.evalueIcon = event.detail.value;
-    console.log(this.evalueIcon)
-    this.iconGenero = this.evalueIcon.icon;
+      this.dtaBaseFire.updateDoc(this.newProduc, this.pathProducts, this.newProduc.id);
+      this.modalEditGenero = false;
+
+    }
+    if (this.modalCreateGenero) {
+      this.newProduc = {
+        id: this.idSelect,
+        sitio: this.textSelectSitio,
+        icon: this.srcIcon,
+        nombre: this.nombreCrear,
+      }
+      this.dtaBaseFire.createDoc(this.newProduc, this.pathProducts, this.newProduc.id);
+      this.modalCreateGenero = false;
+    }
+    this.modalController.dismiss();
   }
-  filterTipo(event) {
-    const filterText = event.target.value;
-    this.textFilter = filterText;
+
+  checkValueIcon(event){
+    this.evalueSelectIcon = event.detail.value;
+    this.srcIcon = this.evalueSelectIcon.icon;
   }
-  noActive() {
-    this.renderer.setStyle(this.divActive.nativeElement, 'display', 'none');
+  checkValueSitio(event) {
+    this.evalueSelectsitio = event.detail.value;
+    this.textSelectSitio = this.evalueSelectsitio.nombre;
+
   }
-  active() {
-    this.renderer.setStyle(this.divActive.nativeElement, 'display', 'block');
+
+  noActive(id: any) {
+    this.renderer.setStyle(id.nativeElement, 'display', 'none');
+  }
+  active(id: any) {
+    this.renderer.setStyle(id.nativeElement, 'display', 'block');
   }
 
 }

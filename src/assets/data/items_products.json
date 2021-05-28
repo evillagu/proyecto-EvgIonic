@@ -1,0 +1,412 @@
+{
+    "arroz-largo": {
+        "id": "generalItems1",
+        "genero": "arroz",
+        "nombre": "arroz largo",
+        "precio": "0.80"
+    },
+    "arroz-redondo": {
+        "id": "generalItems2",
+        "genero": "arroz",
+        "nombre": "arroz-redondo",
+        "precio": "1.10"
+    },
+    "arroz-basmati": {
+        "id": "generalItems3",
+        "genero": "arroz",
+        "precio": "1.20",
+        "nombre": "arroz-basmati",
+        "marca": "brillante",
+        "descripcion": "para microondas"
+    },
+    "arroz-integral": {
+        "id": "generalItems4",
+        "genero": "arroz",
+        "nombre": "arroz-integral",
+        "precio": "1.55"
+    },
+    "Espirales": {
+        "id": "generalItems5",
+        "genero": "pastas",
+        "nombre": "Espirales",
+        "precio": "0.60"
+    },
+    "Macarrones": {
+
+        "id": "generalItems6",
+        "genero": "pastas",
+        "nombre": "Macarrones",
+        "precio": "0.45"
+    },
+    "Espaguetis": {
+        "id": "generalItems7",
+        "genero": "pastas",
+        "nombre": "Espaguetis",
+        "precio": "0.45"
+    },
+    "tallarines": {
+        "id": "generalItems8",
+        "genero": "pastas",
+        "nombre": "tallarines",
+        "precio": "0.75"
+    },
+    "figuras": {
+        "id": "generalItems9",
+        "genero": "pastas",
+        "nombre": "figuras",
+        "precio": "0.70"
+    },
+    "nidos": {
+        "id": "generalItems10",
+        "genero": "pastas",
+        "nombre": "nidos",
+        "precio": "0.70",
+        "descripcion": "para hacerlos con carne"
+
+    },
+    "garbanzo-grano": {
+        "id": "generalItems11",
+        "genero": "Legumbres",
+        "nombre": "garbanzo-grano",
+        "precio": "1.50"
+    },
+    "garbanzo-cosido": {
+        "id": "generalItems12",
+        "genero": "Legumbres",
+        "nombre": "garbanzo-cosido",
+        "precio": "0.70"
+    },
+    "lentejas-grano": {
+        "id": "generalItems13",
+        "genero": "Legumbres",
+        "nombre": "lentejas-grano",
+        "precio": "1.90"
+    },
+    "lentejas-cosido": {
+        "id": "generalItems14",
+        "genero": "Legumbres",
+        "nombre": "lentejas-cosido",
+        "precio": "1.00"
+    },
+    "alubia-blancas-grano": {
+        "id": "generalItems15",
+        "genero": "Legumbres",
+        "nombre": "alubia-blancas-grano",
+        "precio": "1.65"
+    },
+    "alubia-blancas-cosido": {
+        "id": "generalItems16",
+        "genero": "Legumbres",
+        "nombre": "alubia-blancas-cosido",
+        "precio": "0.65"
+    },
+    "alubia-rojas-grano": {
+        "id": "generalItems17",
+        "genero": "Legumbres",
+        "nombre": "alubia-rojas-grano",
+        "precio": "1.80"
+    },
+    "alubia-rojas-cosido": {
+        "id": "generalItems18",
+        "genero": "Legumbres",
+        "nombre": "alubia-rojas-cosido",
+        "precio": "0.75"
+    },
+    "alubia-pinta-grano": {
+        "id": "generalItems19",
+        "genero": "Legumbres",
+        "nombre": "alubia-pinta-grano",
+        "precio": "1.90"
+    },
+    "alubia-pinta-cosido": {
+        "id": "generalItems20",
+        "genero": "Legumbres",
+        "nombre": "alubia-pinta-cosido",
+        "precio": "0.80"
+    },
+
+    "aceite-girasol-1lt": {
+        "id": "generalItems21",
+        "genero": "aceites-vinagres",
+        "nombre": "aceite-girasol-1lt",
+        "precio": "1.25",
+        "descripcion": "1lt"
+    },
+    "aceite-oliva-1lt": {
+        "id": "generalItems22",
+        "genero": "aceites-vinagres",
+        "nombre": "aceite-oliva-1lt",
+        "precio": "2.35",
+        "descripcion": "1lt"
+    },
+    "aceite-girasol-5lt": {
+        "id": "generalItems23",
+        "genero": "aceites-vinagres",
+        "nombre": "aceite-girasol-5lt",
+        "precio": "5.80",
+        "descripcion": "5lt"
+    },
+    "aceite-oliva-5lt": {
+        "id": "generalItems24",
+        "genero": "aceites-vinagres",
+        "nombre": "aceite-oliva-5lt",
+        "precio": "10,50",
+        "descripcion": "5lt"
+    },
+    "vinagre-manzana": {
+        "id": "generalItems25",
+        "genero": "aceites-vinagres",
+        "nombre": "vinagre-manzana",
+        "precio": "10,50",
+        "descripcion": "5lt"
+    },
+    "tomate-frito-pack3": {
+        "id": "generalItems26",
+        "genero": "salsas-tomates",
+        "nombre": "tomate-frito-pack3",
+        "precio": "0.95"
+    },
+    "tomate-frito-tarro": {
+        "id": "generalItems27",
+        "genero": "salsas-tomates",
+        "nombre": "tomate-frito-tarro",
+        "precio": "0.75",
+        "descripcion": "550ml"
+    },
+    "ketchup-tarro": {
+        "id": "generalItems28",
+        "genero": "salsas-tomates",
+        "nombre": "ketchup-tarro",
+        "precio": "0.80",
+        "descripcion": "560ml"
+    },
+    "mayonesa-tarro": {
+        "id": "generalItems29",
+        "genero": "salsas-tomates",
+        "nombre": "mayonesa-tarro",
+        "precio": "1.10",
+        "descripcion": "450ml"
+    },
+    "guacamole-tarro": {
+        "id": "generalItems30",
+        "genero": "salsas-tomates",
+        "nombre": "guacamole-tarro",
+        "precio": "1.65",
+        "descripcion": "200g"
+    },
+    "orégano-triturado": {
+        "id": "generalItems31",
+        "genero": "especias-sazonadores",
+        "nombre": "orégano-triturado",
+        "precio": "0.45"
+    },
+    "ajo-triturado": {
+        "id": "generalItems32",
+        "genero": "especias-sazonadores",
+        "nombre": "ajo-triturado",
+        "precio": "0.55"
+    },
+    "laurel-hoja": {
+        "id": "generalItems33",
+        "genero": "especias-sazonadores",
+        "nombre": "laurel-hoja",
+        "precio": "0.55"
+    },
+    "curry-triturado": {
+        "id": "generalItems34",
+        "genero": "especias-sazonadores",
+        "nombre": "curry-triturado",
+        "precio": "0.65"
+    },
+    "perejil-triturado": {
+        "id": "generalItems35",
+        "genero": "especias-sazonadores",
+        "nombre": "perejil-triturado",
+        "precio": "0.70"
+    },
+    "romero-triturado": {
+        "id": "generalItems36",
+        "genero": "especias-sazonadores",
+        "nombre": "romero-triturado",
+        "precio": "1.00"
+    },
+
+    "levadura-caja": {
+        "id": "generalItems37",
+        "genero": "harinas-levaduras",
+        "nombre": "levadura-caja",
+        "precio": "1.20"
+    },
+    "harina-caja": {
+        "id": "generalItems38",
+        "genero": "harinas-levaduras",
+        "nombre": "harina-caja",
+        "precio": "0.80"
+    },
+    "sal-marina": {
+        "id": "generalItems39",
+        "genero": "sales-azucar",
+        "nombre": "sal-marina",
+        "precio": "0.25"
+    },
+    "sal-gruesa": {
+        "id": "generalItems40",
+        "genero": "sales-azucar",
+        "nombre": "sal-gruesa",
+        "precio": "0.25"
+    },
+    "sal-yodada": {
+        "id": "generalItems41",
+        "genero": "sales-azucar",
+        "nombre": "sal-yodada",
+        "precio": "0.65"
+    },
+    "bicarbonato-sódico": {
+        "id": "generalItems42",
+        "genero": "sales-azucar",
+        "nombre": "bicarbonato-sódico",
+        "precio": "0.50"
+    },
+    "azucar-moreno": {
+        "id": "generalItems43",
+        "genero": "sales-azucar",
+        "nombre": "azucar-moreno",
+        "precio": "0.95"
+    },
+    "azucar-blanca": {
+        "id": "generalItems44",
+        "genero": "sales-azucar",
+        "nombre": "azucar-blanca",
+        "precio": "0.73"
+    },
+    "pan-molde": {
+        "id": "generalItems45",
+        "genero": "pan-galletas",
+        "nombre": "pan-molde",
+        "precio": "1.00",
+        "descripcion": "grande"
+
+    },
+    "pan-molde-sin-corteza": {
+        "id": "generalItems46",
+        "genero": "pan-galletas",
+        "nombre": "pan-molde-sin-corteza",
+        "precio": "1.00",
+        "descripcion": "pequeño"
+    },
+    "pan-molde-integral": {
+        "id": "generalItems47",
+        "genero": "pan-galletas",
+        "nombre": "pan-molde-integral",
+        "precio": "1.00",
+        "descripcion": "pequeño"
+    },
+    "picos-de-pan": {
+        "id": "generalItems48",
+        "genero": "pan-galletas",
+        "nombre": "picos-de-pan",
+        "precio": "2.05",
+        "descripcion": "200g"
+
+    },
+    "regañadas-de-pan": {
+        "id": "generalItems49",
+        "genero": "pan-galletas",
+        "nombre": "regañadas-de-pan",
+        "precio": "2.05",
+        "descripcion": "200g"
+
+    },
+    "galletas-tostadas": {
+        "id": "generalItems50",
+        "genero": "pan-galletas",
+        "nombre": "galletas-tostadas",
+        "precio": "0.90",
+        "descripcion": "200g"
+
+    },
+    "galletas-Campurrianas-Cuétara": {
+        "id": "generalItems51",
+        "genero": "pan-galletas",
+        "nombre": "galletas-Campurrianas-Cuétara",
+        "precio": "2.45",
+        "descripcion": "400g"
+
+    },
+    "galletas-maria": {
+        "id": "generalItems52",
+        "genero": "pan-galletas",
+        "nombre": "galletas-maria",
+        "precio": "1.00",
+        "descripcion": "800g"
+
+    },
+    "galletas-saladas": {
+        "id": "generalItems53",
+        "genero": "pan-galletas",
+        "nombre": "galletas-saladas",
+        "precio": "1.00",
+        "descripcion": "800g"
+
+    },
+    "leche-entera": {
+        "id": "generalItems54",
+        "genero": "lacteos-huevos",
+        "nombre": "leche-entera",
+        "precio": "0.60"
+    },
+    "leche-semi": {
+        "id": "generalItems55",
+        "genero": "lacteos-huevos",
+        "nombre": "leche-semi",
+        "precio": "0.75"
+    },
+    "leche-desnatada": {
+        "id": "generalItems56",
+        "genero": "lacteos-huevos",
+        "nombre": "leche-desnatada",
+        "precio": "0.75"
+    },
+    "leche-sin-lactosa": {
+        "id": "generalItems57",
+        "genero": "lacteos-huevos",
+        "nombre": "leche-sin-lactosa",
+        "precio": "0.90"
+    },
+    "yogures-variados": {
+        "id": "generalItems58",
+        "genero": "lacteos-huevos",
+        "nombre": "yogures-variados",
+        "precio": "1.90",
+        "descripcion": "16uds"
+    },
+    "yogures-natural": {
+        "id": "generalItems59",
+        "genero": "lacteos-huevos",
+        "nombre": "yogures-natural",
+        "precio": "0.90",
+        "descripcion": "8uds"
+    },
+    "yogures-desnatado-con-trozos": {
+        "id": "generalItems60",
+        "genero": "lacteos-huevos",
+        "nombre": "yogures-desnatado-con-trozos",
+        "precio": "0.90",
+        "descripcion": "4uds"
+    },
+    "yogures-biofrutas": {
+        "id": "generalItems61",
+        "genero": "lacteos-huevos",
+        "nombre": "yogures-biofrutas",
+        "precio": "0.95",
+        "descripcion": "4uds"
+    },
+    "huevos": {
+        "id": "generalItems62",
+        "genero": "lacteos-huevos",
+        "nombre": "huevos",
+        "precio": "1.39",
+        "descripcion": "docena"
+    }
+
+}

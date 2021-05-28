@@ -8,28 +8,32 @@
         </h3>
     </div>
 </ion-card>
-<ion-content *ngIf="modalLists">
-    <ion-list>
+<ion-content *ngIf="modalCreateGenero">
+    <ion-card>
         <ion-item>
-            <ion-checkbox></ion-checkbox>
-            <ion-label>Awesome Label</ion-label>
+            <ion-label placeholder="Nombre" position="floating">Nombre</ion-label>
+            <ion-input type="text" name="nombre" [(ngModel)]="nombreCrear">
+            </ion-input>
         </ion-item>
-    </ion-list>
-    <!-- <ion-toolbar>
-        <ion-searchbar class="margin-top__10px" placeholder="buscar tipo....." (ionChange)="filterTipo($event)" [debounce]="250" showCancelButton="always" animated color="tertiary" type="country-name">
-        </ion-searchbar>
-    </ion-toolbar> -->
-    <!-- <ion-card class="card-text-filter" *ngFor="let dtaService of dtaServicePlace | async">
-        <ion-list *ngFor="let dta; let i=index of dtaService.products | filtro: textFilter">
-            <div class="displayFlex-row displayFlex-row__justi-around display-none">
-                <ion-label>{{dta.genero}}</ion-label>
-                <ion-avatar>
-                    <img src={{dta.icon}}>
-                </ion-avatar>
-            </div>
-        </ion-list>
 
-    </ion-card> -->
+        <ion-item>
+            <ion-label></ion-label>
+            <ion-select class="select-text padding-5" placeholder="sitio" (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
+                <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label></ion-label>
+            <ion-select class="select-text padding-5" placeholder="iconos" (ionChange)="checkValueIcon($event)" [(ngModel)]='evalueSelectIcon'>
+                <ion-select-option *ngFor="let dta of icons" [value]="dta">
+                    <ion-avatar>
+                        <img src={{iconGenero + dta.icon}}>
+                    </ion-avatar>
+                </ion-select-option>
+            </ion-select>
+        </ion-item>
+
+    </ion-card>
 
 </ion-content>
 <ion-content class="conten-editGenero" *ngIf="modalEditGenero">
@@ -41,44 +45,46 @@
         <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
         <ion-item>
             <ion-label></ion-label>
-            <ion-select class="select-text padding-5" placeholder="Tipo" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
+            <ion-select class="select-text padding-5" placeholder="Genero Productos" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
                 <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
             </ion-select>
         </ion-item>
-
     </ion-card>
     <div #boxActive>
+
+        <ion-item>
+            <ion-label placeholder="Nombre" position="floating">{{textSelect}}</ion-label>
+            <ion-input type="text" name="nombre" [(ngModel)]="nombreEdit">
+            </ion-input>
+        </ion-item>
         <ion-card>
             <ion-item>
-                <ion-label placeholder="Tipo" position="floating">{{textSelect}}</ion-label>
-                <ion-input></ion-input>
+                <ion-label></ion-label>
+                <ion-select class="select-text padding-5" placeholder="especifico" (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
+                    <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
+                </ion-select>
             </ion-item>
             <ion-item>
-                <ion-label placeholder="Tipo" position="floating">{{textSelectSitio}}</ion-label>
-                <ion-input></ion-input>
+                <ion-label></ion-label>
+                <ion-select class="select-text padding-5" placeholder="iconos" (ionChange)="checkValueIcon($event)" [(ngModel)]='evalueSelectIcon'>
+                    <ion-select-option *ngFor="let dta of icons" [value]="dta">
+                        <ion-avatar>
+                            <img src={{iconGenero + dta.icon}}>
+                        </ion-avatar>
+                    </ion-select-option>
+                </ion-select>
             </ion-item>
-            <ion-item class="padding-10">
-                <ion-avatar>
-                    <img src={{iconGenero}}>
-                </ion-avatar>
-                <!-- <ion-select class="select-text padding-5" placeholder="" (ionChange)="valueIcon($event)" [(ngModel)]='evalueIcon'>
-                <ion-select-option *ngFor="let dataIcons of dtaIcons" [value]="dataIcons">
-                    <ion-avatar>
-                        <img src={{iconGenero}}>
-                    </ion-avatar>
-                </ion-select-option>
-            </ion-select> -->
-            </ion-item>
+
         </ion-card>
     </div>
 </ion-content>
 
 
 <div class="displayFlex displayFlex-row__center margin-btn__35px">
+    <ion-button (click)="btnAceptarModal()" class="btn-affirmation" shape="round" fill="outline" fill="clear">
+        Aceptar
+    </ion-button>
     <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
         Cancelar
-    </ion-button>
-    <ion-button class="btn-affirmation" (click)="closeModal()" shape="round" fill="outline" fill="clear">
-        Aceptar
     </ion-button>
 </div>

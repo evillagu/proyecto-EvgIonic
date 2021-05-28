@@ -1,0 +1,63 @@
+{
+    "arroz": {
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "id": "generalArroz1",
+        "sitio": "general",
+        "nombre": "arroz"
+    },
+    "pastas": {
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "id": "generalPasta1",
+        "sitio": "general",
+        "nombre": "pastas"
+    },
+    "legumbres": {
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "id": "generalLegumbres1",
+        "sitio": "general",
+        "nombre": "legumbres"
+    },
+    "aceites-vinagres": {
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "id": "generalAceites1",
+        "sitio": "general",
+        "nombre": "aceites-vinagres"
+    },
+    "salsas-tomates": {
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "id": "generalSalsas1",
+        "sitio": "general",
+        "nombre": "salsas-tomates"
+    },
+    "especias-sazonadores": {
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "id": "generalEspecias1",
+        "sitio": "general",
+        "nombre": "especias-sazonadores"
+    },
+    "harinas-levaduras": {
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "id": "generalHarinas1",
+        "sitio": "general",
+        "nombre": "harinas-levaduras"
+
+    },
+    "sales-azucar": {
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "id": "generalSales1",
+        "sitio": "general",
+        "nombre": "sales-azucar"
+    },
+    "pan-galletas": {
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "id": "generalPan1",
+        "sitio": "general",
+        "nombre": "pan-galletas"
+    },
+    "lacteos-huevos": {
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "id": "generalLacteos1",
+        "sitio": "general",
+        "nombre": "lacteos-huevos"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "general": {
+        "id": "general1",
+        "nombre": "general",
+        "ubicacion": ""
+    },
+    "carrefour": {
+        "id": "carrefour1",
+        "nombre": "carrefour",
+        "ubicacion": "centro"
+    },
+    "corte-ingles": {
+        "id": "corteingles1",
+        "nombre": "corte-ingles",
+        "ubicacion": "centro"
+    },
+    "especifico": {
+        "id": "especifico1",
+        "nombre": "especifico"
+    }
+
+}
