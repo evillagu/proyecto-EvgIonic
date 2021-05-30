@@ -3,6 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { FirestoreService } from '../../../services/firestore.service';
 import { ItemProducts } from '../../../models-interfaces/itemProduct';
 import { Products } from '../../../models-interfaces/producs';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-modal-product',
@@ -27,8 +28,10 @@ export class ModalProductComponent implements OnInit {
     precio: null,
     marca: '',
     descripcion: '',
+    sitio: '',
     id: this.dtaBaseFire.getId()
   }
+  newItemProducForm: FormGroup;
   private pathItem = "item-products/";
   private pathProducts = "productos/"
   constructor(
@@ -41,15 +44,6 @@ export class ModalProductComponent implements OnInit {
   }
   closeModal() {
     this.modalController.dismiss();
-    if (this.modalcreateItemProduc) {
-      // aqui vendria la funcion que haria para llevar datos al rest
-      this.modalcreateItemProduc = false;
-    }
-    if (this.modalEditItemProduc) {
-
-      this.modalEditItemProduc = false;
-    }
-
   }
   // trae toda la coleccion
   getItemProduc() {
@@ -80,6 +74,9 @@ export class ModalProductComponent implements OnInit {
   checkValue(event) {
       this.evalueSelectGenero = event.detail.value;
       
+  }
+  btnCreateItem(){
+    
   }
 
 }

@@ -10,41 +10,58 @@
 </ion-card>
 <ion-content *ngIf="modalCreateGenero">
     <ion-card>
+        <span class="tex-info">Sitio donde esta el producto</span>
         <ion-item>
-            <ion-label placeholder="Nombre" position="floating">Nombre</ion-label>
-            <ion-input type="text" name="nombre" [(ngModel)]="nombreCrear">
-            </ion-input>
-        </ion-item>
-
-        <ion-item>
-            <ion-label></ion-label>
-            <ion-select class="select-text padding-5" placeholder="sitio" (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
+            <ion-select class="select-text padding-5" placeholder={{textSelectSitio}} (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
                 <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
             </ion-select>
         </ion-item>
-        <ion-item>
-            <ion-label></ion-label>
-            <ion-select class="select-text padding-5" placeholder="iconos" (ionChange)="checkValueIcon($event)" [(ngModel)]='evalueSelectIcon'>
-                <ion-select-option *ngFor="let dta of icons" [value]="dta">
-                    <ion-avatar>
-                        <img src={{iconGenero + dta.icon}}>
+
+        <div class="displayFlex-row displayFlex-row__justi-around btn-active-avatar" (click)="showAll1()">
+            <ion-avatar class="btn-avartar">
+                <img src={{srcIcon}}>
+            </ion-avatar>
+            <div class="displayFlex-row displayFlex-row__justi-end padding-30">
+                <span class="text-opacity">Escoje icono</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </div>
+        </div>
+    </ion-card>
+    <div *ngIf="isShowAll">
+        <ion-list *ngFor="let entry of icons">
+            <div class="displayFlex-row displayFlex-row__justi-between box-avatar-edit">
+                <div class="displayFlex-row displayFlex-row__justi-start" (click)="showAll($event, entry.icon)">
+                    <ion-checkbox></ion-checkbox>
+                    <ion-avatar class="btn-avartar margin-left__10px">
+                        <img src={{entry.icon}}>
                     </ion-avatar>
-                </ion-select-option>
-            </ion-select>
+                </div>
+                <span class="text-opacity">{{entry.nombre}}</span>
+            </div>
+        </ion-list>
+    </div>
+    <form [formGroup]="newProducForm" (submit)="btnAceptarCreate()">
+        <ion-item>
+            <ion-label for="nombre" placeholder="Nombre" position="floating">{{textSelect}}</ion-label>
+            <ion-input type="text" id="nombre" name="nombre" formControlName="nombre" (ionInput)="runTimeChange($event)" [(ngModel)]="clearInput">
+            </ion-input>
+            <span class="text-informacion text-informacion__min">para habilitar el boton de aceptar escriba un tipo</span>
         </ion-item>
 
-    </ion-card>
 
+        <ion-button (click)="btnAceptarCreate()" [hidden]="!newProducForm.valid" [disabled]="!newProducForm.valid || btActiveFiltre" class="btn-affirmation btn-affirmation__fixed" expand="block" shape="round" fill="clear">
+            Aceptar
+        </ion-button>
+    </form>
 </ion-content>
 <ion-content class="conten-editGenero" *ngIf="modalEditGenero">
-    <div class="displayFlex-row displayFlex-row__justi-around margin-btn__-15">
-        <p class="margin-left__5porcen">Modificar</p>
+    <div class="displayFlex-row displayFlex-row__justi-around margin_-15-0 ">
+        <p class="">Modificar</p>
         <ion-icon slot="start" name="create-sharp"></ion-icon>
     </div>
     <ion-card>
         <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
         <ion-item>
-            <ion-label></ion-label>
             <ion-select class="select-text padding-5" placeholder="Genero Productos" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
                 <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
             </ion-select>
@@ -58,33 +75,53 @@
             </ion-input>
         </ion-item>
         <ion-card>
+            <span class="tex-info">Donde esta el producto</span>
             <ion-item>
                 <ion-label></ion-label>
-                <ion-select class="select-text padding-5" placeholder="especifico" (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
+                <ion-select class="select-text padding-5" placeholder={{textSelectSitio}} (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
                     <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
                 </ion-select>
             </ion-item>
-            <ion-item>
-                <ion-label></ion-label>
-                <ion-select class="select-text padding-5" placeholder="iconos" (ionChange)="checkValueIcon($event)" [(ngModel)]='evalueSelectIcon'>
-                    <ion-select-option *ngFor="let dta of icons" [value]="dta">
-                        <ion-avatar>
-                            <img src={{iconGenero + dta.icon}}>
-                        </ion-avatar>
-                    </ion-select-option>
-                </ion-select>
-            </ion-item>
 
+            <div class="displayFlex-row displayFlex-row__justi-around btn-active-avatar" (click)="showAll1()">
+
+                <ion-avatar class="btn-avartar">
+                    <img src={{srcIcon}}>
+                </ion-avatar>
+                <div class="displayFlex-row displayFlex-row__justi-end padding-30">
+                    <span class="text-opacity">Escoje icono</span>
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                </div>
+            </div>
         </ion-card>
+        <div *ngIf="isShowAll">
+            <ion-list *ngFor="let entry of icons">
+                <div class="displayFlex-row displayFlex-row__justi-between box-avatar-edit">
+                    <div class="displayFlex-row displayFlex-row__justi-start" (click)="showAll($event, entry.icon)">
+                        <ion-checkbox></ion-checkbox>
+                        <ion-avatar class="btn-avartar margin-left__10px">
+                            <img src={{entry.icon}}>
+                        </ion-avatar>
+                    </div>
+                    <span class="text-opacity">{{entry.nombre}}</span>
+                </div>
+            </ion-list>
+        </div>
+
     </div>
 </ion-content>
 
-
-<div class="displayFlex displayFlex-row__center margin-btn__35px">
-    <ion-button (click)="btnAceptarModal()" class="btn-affirmation" shape="round" fill="outline" fill="clear">
+<div *ngIf="modalEditGenero" class="displayFlex-row box-btn-cancelar">
+    <ion-button (click)="btnAceptarEdit()" *ngIf="modalEditGenero" class="btn-affirmation " expand="block" shape="round" fill="clear">
         Aceptar
     </ion-button>
-    <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
+    <ion-button class="btn-red" (click)="closeModal()" expand="block" shape="round" fill="clear">
+        Cancelar
+    </ion-button>
+</div>
+<div *ngIf="modalCreateGenero" class="box-btn-cancelar">
+
+    <ion-button class="btn-red" (click)="closeModal()" expand="block" shape="round" fill="clear">
         Cancelar
     </ion-button>
 </div>

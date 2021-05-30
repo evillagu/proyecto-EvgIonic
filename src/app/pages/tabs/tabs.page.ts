@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonList, ModalController } from '@ionic/angular';
 import { ModalProductComponent } from 'src/app/components/modales/modal-product/modal-product.component';
 import { ModalComponent } from 'src/app/components/modales/modal/modal.component';
+import { ModalSitiosComponent } from '../../components/modales/modal-sitios/modal-sitios.component';
 
 
 @Component({
@@ -26,6 +27,25 @@ export class TabsPage implements OnInit {
   createproducto(){
     this.createModalProducto()
   }
+  createSitio(){
+    this.createModalSitio();
+  }
+  onBlurFab(event){
+    
+    console.log(event.target)
+ 
+  }
+  async createModalSitio() {
+    const modal = await this.modalController.create({
+      component: ModalSitiosComponent,
+      componentProps:{
+       titulo: 'Sitio - Lugar',
+       descricion: 'Es donde puede encontrar los productos de tus listas'
+      },
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
   
   async createModalGenero() {
     const modal = await this.modalController.create({
@@ -45,6 +65,7 @@ export class TabsPage implements OnInit {
       mode:"md",
       componentProps:{
        modalEditGenero: true,
+       paginaActual:'',
        titulo: 'Tipo de Producto',
        descricion: 'El tipo es el genero de alimentos (arroz, pasta, legumbres.......)  '
       },

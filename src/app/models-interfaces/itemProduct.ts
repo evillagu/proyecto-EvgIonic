@@ -5,4 +5,5 @@ marca? :string;
 descripcion?: string;
 id: string;
 genero:string;
+sitio:string;
 }

@@ -5,6 +5,7 @@ import { FirestoreService } from 'src/app/services/firestore.service';
 import { ItemProducts } from 'src/app/models-interfaces/itemProduct';
 import { Products } from 'src/app/models-interfaces/producs';
 import { map } from 'rxjs/operators'
+import { GeneralService } from 'src/app/services/general.service';
 
 @Component({
   selector: 'app-list-produc-genere',
@@ -16,48 +17,51 @@ export class ListProducGenerePage implements OnInit {
   @ViewChild(IonInfiniteScroll) inifiteScroll: IonInfiniteScroll;
   @ViewChild(IonList) ionlist: IonList;
 
-  imgAvatar : string;
+  imgAvatar: string;
   menuLevel1 = null;
   menuLevel2 = null;
   selectMenu = true;
 
   productos: Products[] = [];
-  itemProduts: ItemProducts[]= [];
-  itemProAccordeon: ItemProducts[]= [];
+  itemProduts: ItemProducts[] = [];
+  itemProAccordeon: ItemProducts[] = [];
   newProduc: ItemProducts = {
     nombre: '',
-    genero:'',
+    genero: '',
     precio: null,
     marca: '',
     descripcion: '',
+    sitio: '',
     id: this.dtaBaseFire.getId()
   }
- 
-  private pathItemProduc= "item-products/";
   private pathProducts = "productos/"
-  constructor( 
-    private actionSheetCtr :ActionSheetController, 
-    private alertController: AlertController, 
+  private pathItemProduc = "item-products/";
+  constructor(
+    private actionSheetCtr: ActionSheetController,
+    private alertController: AlertController,
     public modalController: ModalController,
-    public dtaBaseFire : FirestoreService
-  ) { }
+    public dtaBaseFire: FirestoreService,
+    public generalService: GeneralService
+  ) {
+    
+   }
 
   ngOnInit() {
-      this.getProduc();
-      this.getItemProducts();
+    this.getProduc();
+    this.getItemProducts();
   }
-  loadData( event){
+  loadData(event) {
     this.inifiteScroll.complete();
     // this.inifiteScroll.disabled = true;
-    
+
   }
-  eventActionSheet(){
+  eventActionSheet() {
     this.selectMenu = false;
-    
+
   }
-  levelNav1(navX: string, dtaIdItem : string) {
+  levelNav1(navX: string, dtaIdItem: string) {
     if (this.isNav1Displayed(navX)) {
-      if(this.selectMenu){
+      if (this.selectMenu) {
         this.menuLevel1 = null;
       }
     } else {
@@ -68,7 +72,7 @@ export class ListProducGenerePage implements OnInit {
   }
 
   isNav1Displayed(navX: string) {
-    
+
     return this.menuLevel1 === navX;
   }
 
@@ -89,34 +93,48 @@ export class ListProducGenerePage implements OnInit {
     this.menuLevel1 = null;
     this.menuLevel2 = null;
   }
-  optionDelete(produc: ItemProducts){
+  optionDelete(produc: ItemProducts) {
     this.ionlist.closeSlidingItems();
     this.deleteActionSheet(produc);
-   
+
   }
-  optionEdit(produc: ItemProducts){
+  optionEdit(produc: ItemProducts) {
     this.ionlist.closeSlidingItems();
     this.editAlertPrompt(produc);
-    
+
   }
-  optionList(dta: any){
+  optionList(dta: any) {
     this.ionlist.closeSlidingItems();
     this.listasModal();
+
+  }
+  getFilterProduc() {
+    
+  }
+  getFilterItemProduc() {
     
   }
   getProduc() {
-    this.dtaBaseFire.getCollection<Products>(this.pathProducts).subscribe(
+    this.dtaBaseFire.getCollection<Products>(this.pathProducts)
+    .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
+    .subscribe(
       res => { this.productos = res });
   }
-  getItemProducts(){
-    this.dtaBaseFire.getCollection<ItemProducts>(this.pathItemProduc).subscribe(
+  getItemProducts() {
+    this.dtaBaseFire.getCollection<ItemProducts>(this.pathItemProduc)
+    .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
+    .subscribe(
       res => { this.itemProduts = res });
-  }
-  getItemAccordeon(dtaIdItem: string){
-    this.itemProAccordeon = this.itemProduts.filter( dta => dta.genero === dtaIdItem);
-    
-  }
  
+  }
+
+
+  getItemAccordeon(dtaIdItem: string) {
+    this.itemProAccordeon = this.itemProduts.filter(dta => dta.genero === dtaIdItem);
+  }
+
+
+
   async deleteActionSheet(produc: ItemProducts) {
     const actionSheet = await this.actionSheetCtr.create({
       header: 'Realmente desea eliminar',
@@ -127,11 +145,11 @@ export class ListProducGenerePage implements OnInit {
         text: 'Eliminar',
         role: 'delete',
         icon: 'trash-outline',
-        cssClass:'btn-delete-sheet',
+        cssClass: 'btn-delete-sheet',
         handler: () => {
-          this.dtaBaseFire.deleteDoc(this.pathItemProduc,produc.id);
+          this.dtaBaseFire.deleteDoc(this.pathItemProduc, produc.id);
         }
-      },{
+      }, {
         text: 'Cancel',
         icon: 'close',
         cssClass: '',
@@ -164,13 +182,13 @@ export class ListProducGenerePage implements OnInit {
           name: 'precio',
           type: 'text',
           id: 'prduct2',
-          value: produc.precio, 
+          value: produc.precio,
           placeholder: 'Precio'
         },
         {
           name: 'marca',
           type: 'text',
-          value: produc.marca, 
+          value: produc.marca,
           placeholder: 'Marca'
         },
         {
@@ -180,40 +198,40 @@ export class ListProducGenerePage implements OnInit {
           value: produc.descripcion,
           placeholder: 'Descripcion'
         }],
-        buttons: [
-          {
-            text: 'Cancel',
-            role: 'cancel',
-            cssClass: 'btn-red',
-            handler: (data) => {
-             
-              console.log("cancelar edit");
-            }
-          }, {
-            text: 'Ok',
-            cssClass:'btn-affirmation',
-            handler: (data) => {
-              JSON.stringify(data);
-              this.newProduc.nombre = data.nombre;
-              this.newProduc.precio = data.precio;
-              this.newProduc.marca = data.marca;
-              this.newProduc.descripcion = data.descripcion
-              this.dtaBaseFire.updateDoc( this.newProduc, this.pathItemProduc, produc.id);
-              
-              console.log('Confirm Ok');
-            }
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'btn-red',
+          handler: (data) => {
+
+            console.log("cancelar edit");
           }
-        ]
-      });
-  
-      await alert.present();
+        }, {
+          text: 'Ok',
+          cssClass: 'btn-affirmation',
+          handler: (data) => {
+            JSON.stringify(data);
+            this.newProduc.nombre = data.nombre;
+            this.newProduc.precio = data.precio;
+            this.newProduc.marca = data.marca;
+            this.newProduc.descripcion = data.descripcion
+            this.dtaBaseFire.updateDoc(this.newProduc, this.pathItemProduc, produc.id);
+
+            console.log('Confirm Ok');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
   async listasModal() {
     const modal = await this.modalController.create({
       component: ModalComponent,
-      componentProps:{
+      componentProps: {
         nombre: 'pepiro',
-        pais : 'prueba'
+        pais: 'prueba'
       },
       cssClass: 'my-custom-class'
     });

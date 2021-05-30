@@ -1,6 +1,6 @@
 <app-header titulo="PRODUCTOS">
 </app-header>
-<ion-fab class="fab-tabs" vertical="top" horizontal="end">
+<ion-fab class="fab-tabs" vertical="top" horizontal="end" (ionBlur)="onBlurFab($event)">
     <ion-fab-button class="btn-fab-icon">
         <ion-icon name="add-outline"></ion-icon>
     </ion-fab-button>
@@ -19,6 +19,11 @@
             <ion-fab-button>
                 <button (click)="createproducto()">
                     Crear Producto
+                </button>
+            </ion-fab-button>
+            <ion-fab-button>
+                <button (click)="createSitio()">
+                    Crear Sitio(lugar)
                 </button>
             </ion-fab-button>
         </ion-card>

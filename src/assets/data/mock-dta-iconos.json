@@ -1,43 +1,70 @@
-[{
-        "id": "1",
-        "icon": "../../../../assets/img/icon-product/arroz.jpg"
+{
+    "arroz": {
+        "id": "icons1",
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "nombre": "arroz",
+        "visible": true
     },
-    {
-        "id": "2",
-        "icon": "../../../../assets/img/icon-product/pasta.jpg"
+    "pasta": {
+        "id": "icons2",
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "nombre": "pasta",
+        "visible": true
     },
-    {
-        "id": "3",
-        "icon": "../../../../assets/img/icon-product/legumbres.jpg"
+    "legumbres": {
+        "id": "icons3",
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "nombre": "legumbres",
+        "visible": true
     },
-    {
-        "id": "4",
-        "icon": "../../../../assets/img/icon-product/aceites.jpg"
+    "aceites": {
+        "id": "icons4",
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "nombre": "aceites",
+        "visible": true
     },
-    {
-        "id": "5",
-        "icon": "../../../../assets/img/icon-product/salsas.jpg"
+    "salsas": {
+        "id": "icons5",
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "nombre": "salsas",
+        "visible": true
     },
-    {
-        "id": "6",
-        "icon": "../../../../assets/img/icon-product/especias.jpg"
+    "especias": {
+        "id": "icons6",
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "nombre": "especias",
+        "visible": true
     },
-    {
-        "id": "7",
-        "icon": "../../../../assets/img/icon-product/harina.jpg"
+    "harina": {
+        "id": "icons7",
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "nombre": "harina",
+        "visible": true
     },
-    {
-        "id": "8",
-        "icon": "../../../../assets/img/icon-product/sal.jpg"
+    "sal": {
+        "id": "icons8",
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "nombre": "sal",
+        "visible": true
     },
 
-    {
-        "id": "9",
-        "icon": "../../../../assets/img/icon-product/pan.jpg"
+    "pan": {
+        "id": "icons9",
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "nombre": "pan",
+        "visible": true
     },
-    {
-        "id": "10",
-        "icon": "../../../../assets/img/icon-product/lacteos.jpg"
+    "lacteos": {
+        "id": "icons10",
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "nombre": "lacteos",
+        "visible": true
+    },
+    "aablanco": {
+        "id": "icons10",
+        "icon": "../../../../assets/img/icon-product/blanco.jpg",
+        "nombre": "blanco",
+        "visible": true
     }
 
-]
+}

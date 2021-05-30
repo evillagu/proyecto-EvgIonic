@@ -10,4 +10,11 @@
         background: var(--ion-color-danger) !important;
         color: var(--ion-color-danger-contrast) !important;
     }
+    select.ng-invalid.ng-touched,
+    input.ng-invalid.ng-touched {
+        border: 2px solid red;
+    }
+    input.ng-pending {
+        border: 2px solid yellow;
+    }
 }

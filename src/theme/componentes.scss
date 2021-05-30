@@ -26,6 +26,13 @@
             background: var(--ion-color-danger-contrast);
             color: var(--ion-color-danger);
             border: 1px solid var(--ion-color-danger);
+            &__fixed {
+                position: fixed;
+                bottom: 81px;
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 }

@@ -12,6 +12,18 @@
                 justify-content: space-around;
                 align-items: center;
             }
+            &__justi-end {
+                justify-content: end;
+                align-items: center;
+            }
+            &__justi-start {
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &__justi-between {
+                justify-content: space-between;
+                align-items: center;
+            }
         }
         &-column {
             display: flex;

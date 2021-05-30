@@ -30,6 +30,6 @@ export class FormProductoComponent implements OnInit {
       name: value.name,
       description: value.description
     });
-    console.log(value.name + "descripcion   " + value.description);
+  
   }
 }

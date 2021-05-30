@@ -1,4 +1,3 @@
-import { ItemProducts } from './itemProduct';
 
 export interface Products{
     id:string;

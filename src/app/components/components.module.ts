@@ -11,6 +11,7 @@ import { ModalComponent } from 'src/app/components/modales/modal/modal.component
 import { AcorrdionComponent } from './acorrdion/acorrdion.component';
 import { PipeFilterModule } from '../pipes/pipes.module';
 import { ModalProductComponent } from './modales/modal-product/modal-product.component';
+import { ModalSitiosComponent } from './modales/modal-sitios/modal-sitios.component';
 
 
 
@@ -22,14 +23,16 @@ import { ModalProductComponent } from './modales/modal-product/modal-product.com
     FormProductoComponent,
     ModalComponent,
     AcorrdionComponent,
-    ModalProductComponent
+    ModalProductComponent,
+    ModalSitiosComponent
   ],
   exports :[
     HeaderComponent,
     FormProductoComponent,
     ModalComponent,
     AcorrdionComponent,
-    ModalProductComponent
+    ModalProductComponent,
+    ModalSitiosComponent
   ],
   imports: [
     CommonModule,

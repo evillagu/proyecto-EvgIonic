@@ -1,0 +1,18 @@
+<ion-card class="margin-top__10porcen padding-10">
+    <div class="modal-header">
+        <h1 class="text-title">
+            {{titulo}}
+        </h1>
+        <h3 class="text-min">
+            {{descricion}}
+        </h3>
+    </div>
+</ion-card>
+<div class="displayFlex displayFlex-row__center margin-btn__35px">
+    <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
+        Cancelar
+    </ion-button>
+    <ion-button class="btn-affirmation" (click)="closeModal()" shape="round" fill="outline" fill="clear">
+        Aceptar
+    </ion-button>
+</div>

@@ -6,5 +6,7 @@ export interface Places{
 }
 export interface Icons{
     icon: string;
-    nombre:string;
+    id:string;
+    nombre: string;
+    visible: boolean
 }

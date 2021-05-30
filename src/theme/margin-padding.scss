@@ -9,6 +9,9 @@
         &__5px {
             margin: 5px;
         }
+        &_-15-0 {
+            margin: -15px 0;
+        }
         &-btn {
             &__5porcen {
                 margin-bottom: 5% !important;
@@ -30,6 +33,9 @@
             &__-25px {
                 margin-left: -25px;
             }
+            &__10px {
+                margin-left: 10px;
+            }
         }
         &-top {
             &__20porcen {
@@ -47,6 +53,9 @@
         }
     }
     .padding {
+        &-30 {
+            padding: 30px;
+        }
         &-10 {
             padding: 10px;
         }

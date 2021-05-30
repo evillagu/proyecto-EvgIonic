@@ -10,7 +10,7 @@ export class FiltroPipe implements PipeTransform {
 
   transform(product: Products[], text: string): Products[] {
     
-    console.log(text);
+    
     text = this.text + text;
     if(text.length === 0){
       return product;

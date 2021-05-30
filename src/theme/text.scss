@@ -28,5 +28,19 @@
         &-disable {
             opacity: inherit !important;
         }
+        &-informacion {
+            font-size: 11px;
+            padding: 2px 4px;
+            &__min {
+                color: white;
+                background: black;
+            }
+        }
+    }
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-top: -10px;
+        margin-bottom: 5px;
     }
 }

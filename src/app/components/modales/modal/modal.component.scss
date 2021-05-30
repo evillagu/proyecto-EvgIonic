@@ -22,3 +22,29 @@
         margin-bottom: 22px;
     }
 }
+
+.btn-avartar {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-active-avatar {
+    height: 40px;
+}
+
+.box-avatar-edit {
+    padding: 5px 30px;
+}
+
+.tex-info {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.box-btn-cancelar {
+    margin: 0 10px 35px;
+}
+
+input:focus {
+    outline: none;
+}
