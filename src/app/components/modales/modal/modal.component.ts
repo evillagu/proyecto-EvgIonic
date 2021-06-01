@@ -24,6 +24,7 @@ export class ModalComponent implements OnInit {
 
   evalueSelectGenero: any;
   evalueSelectsitio: any;
+  evalueSelectFilterSitio: any;
   evalueSelectIcon: any;
   tipoGenero: any;
   srcIcon: any;
@@ -34,6 +35,7 @@ export class ModalComponent implements OnInit {
   nombreEdit: string;
   nombreCrear: string;
   isShowAll: boolean = false;
+  isEnabled1: boolean = true;
 
   productos: Products[] = [];
   sitios: Places[] = [];
@@ -127,10 +129,11 @@ export class ModalComponent implements OnInit {
 
     setTimeout(() => {
       this.noActive(this.divActive);
-    }, 100);
+    }, 90);
   }
 
   btnAceptarEdit() {
+
     this.newProduc = {
       id: this.idSelect,
       sitio: this.textSelectSitio,
@@ -161,8 +164,9 @@ export class ModalComponent implements OnInit {
       .subscribe(
        res => { this.producFilter = res });
   }
-  getProducFilter(dtaEntry: string) {
-   this.producFilter = this.producFilter.filter(dta2 => dta2.nombre === dtaEntry);
+ 
+  getProducFilter(dtaEntry: any) {
+    this.producFilter = this.productos.filter(dta2 => dta2.nombre === dtaEntry);
   }
   runTimeChange(event) {
     if (!this.textSelectSitio) {
@@ -183,7 +187,12 @@ export class ModalComponent implements OnInit {
       this.producFilter = [];
     }
    }
-   
+   checkValueSitioFilter(event){
+      let dtaSelect = event.detail.value.nombre;
+      this.getProduc(dtaSelect);
+      this.isEnabled1 = false;
+  
+   }
   checkValueSitio(event) {
     this.evalueSelectsitio = event.detail.value;
     this.textSelectSitio = this.evalueSelectsitio.nombre;

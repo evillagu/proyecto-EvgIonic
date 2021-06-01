@@ -6,6 +6,8 @@ import { ItemProducts } from 'src/app/models-interfaces/itemProduct';
 import { Products } from 'src/app/models-interfaces/producs';
 import { map } from 'rxjs/operators'
 import { GeneralService } from 'src/app/services/general.service';
+import { ListaCompraComponent } from 'src/app/components/modales/lista-compra/lista-compra.component';
+import { listCompraItem } from 'src/app/models-interfaces/itemChangeList';
 
 @Component({
   selector: 'app-list-produc-genere',
@@ -34,8 +36,9 @@ export class ListProducGenerePage implements OnInit {
     sitio: '',
     id: this.dtaBaseFire.getId()
   }
+  newItemLista: listCompraItem[]= [];
   private pathProducts = "productos/"
-  private pathItemProduc = "item-products/";
+  private pathItemProduc = "item-productos/";
   constructor(
     private actionSheetCtr: ActionSheetController,
     private alertController: AlertController,
@@ -43,13 +46,14 @@ export class ListProducGenerePage implements OnInit {
     public dtaBaseFire: FirestoreService,
     public generalService: GeneralService
   ) {
-    
-   }
+  }
 
   ngOnInit() {
     this.getProduc();
     this.getItemProducts();
+
   }
+
   loadData(event) {
     this.inifiteScroll.complete();
     // this.inifiteScroll.disabled = true;
@@ -103,38 +107,31 @@ export class ListProducGenerePage implements OnInit {
     this.editAlertPrompt(produc);
 
   }
-  optionList(dta: any) {
+  optionList(event) {
     this.ionlist.closeSlidingItems();
+    let dtaEntry = event.target;
     this.listasModal();
+  }
 
-  }
-  getFilterProduc() {
-    
-  }
-  getFilterItemProduc() {
-    
-  }
   getProduc() {
     this.dtaBaseFire.getCollection<Products>(this.pathProducts)
-    .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
-    .subscribe(
-      res => { this.productos = res });
+      .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
+      .subscribe(
+        res => { this.productos = res });
+  }
+  getProducFilterList(dtaEntry: string) {
+    this.productos = this.productos.filter(dta2 => dta2.nombre === dtaEntry);
   }
   getItemProducts() {
     this.dtaBaseFire.getCollection<ItemProducts>(this.pathItemProduc)
-    .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
-    .subscribe(
-      res => { this.itemProduts = res });
- 
+      .pipe(map(res => res.filter(dta => dta.sitio === 'general')))
+      .subscribe(
+        res => { this.itemProduts = res });
+
   }
-
-
   getItemAccordeon(dtaIdItem: string) {
     this.itemProAccordeon = this.itemProduts.filter(dta => dta.genero === dtaIdItem);
   }
-
-
-
   async deleteActionSheet(produc: ItemProducts) {
     const actionSheet = await this.actionSheetCtr.create({
       header: 'Realmente desea eliminar',
@@ -147,6 +144,7 @@ export class ListProducGenerePage implements OnInit {
         icon: 'trash-outline',
         cssClass: 'btn-delete-sheet',
         handler: () => {
+
           this.dtaBaseFire.deleteDoc(this.pathItemProduc, produc.id);
         }
       }, {
@@ -215,10 +213,9 @@ export class ListProducGenerePage implements OnInit {
             this.newProduc.nombre = data.nombre;
             this.newProduc.precio = data.precio;
             this.newProduc.marca = data.marca;
-            this.newProduc.descripcion = data.descripcion
-            this.dtaBaseFire.updateDoc(this.newProduc, this.pathItemProduc, produc.id);
+            this.newProduc.descripcion = data.descripcion;
+            this.dtaBaseFire.updateDoc(this.newProduc, this.pathItemProduc, produc.id).catch(error => console.log(error));
 
-            console.log('Confirm Ok');
           }
         }
       ]
@@ -228,10 +225,13 @@ export class ListProducGenerePage implements OnInit {
   }
   async listasModal() {
     const modal = await this.modalController.create({
-      component: ModalComponent,
+      component: ListaCompraComponent,
       componentProps: {
-        nombre: 'pepiro',
-        pais: 'prueba'
+        id: '',
+        nombre: '',
+        sitio: '',
+        precio: '',
+
       },
       cssClass: 'my-custom-class'
     });

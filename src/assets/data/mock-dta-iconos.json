@@ -1,4 +1,5 @@
 {
+
     "arroz": {
         "id": "icons1",
         "icon": "../../../../assets/img/icon-product/arroz.jpg",
@@ -67,4 +68,107 @@
         "visible": true
     }
 
+    ,
+    "pescaderia": {
+        "id": "icons11",
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "nombre": "pescaderia",
+        "visible": true
+    },
+    "charcuteria": {
+        "id": "icons12",
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "nombre": "charcuteria",
+        "visible": true
+    },
+    "carniceria": {
+        "id": "icons13",
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "nombre": "carniceria",
+        "visible": true
+    },
+    "fruteria": {
+        "id": "icons14",
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "nombre": "fruteria",
+        "visible": true
+    },
+    "verduras": {
+        "id": "icons15",
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "nombre": "verduras",
+        "visible": true
+    },
+    "bebidas": {
+        "id": "icons16",
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "nombre": "bebidas",
+        "visible": true
+    },
+    "ferreteria": {
+        "id": "icons17",
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "nombre": "ferreteria",
+        "visible": true
+    },
+    "drogueria": {
+        "id": "icons18",
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "nombre": "drogueria",
+        "visible": true
+    },
+    "farmacia": {
+        "id": "icons19",
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "nombre": "farmacia",
+        "visible": true
+    },
+    "picoteo": {
+        "id": "icons20",
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "nombre": "picoteo",
+        "visible": true
+    },
+    "infusiones": {
+        "id": "icons21",
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "nombre": "infusiones",
+        "visible": true
+    },
+    "chocolates": {
+        "id": "icons22",
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "nombre": "chocolates",
+        "visible": true
+    },
+    "parafarmacia": {
+        "id": "icons23",
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "nombre": "parafamacia",
+        "visible": true
+    },
+    "menaje": {
+        "id": "icons24",
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "nombre": "menaje",
+        "visible": true
+    },
+    "perfumeria": {
+        "id": "icons25",
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "nombre": "perfumeria",
+        "visible": true
+    },
+    "electronica": {
+        "id": "icons26",
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "nombre": "electronica",
+        "visible": true
+    },
+    "electrpdomesticos": {
+        "id": "icons27",
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "nombre": "electrodomesticos",
+        "visible": true
+    }
 }

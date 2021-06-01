@@ -8,12 +8,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormProductoComponent } from './forms/form-producto/form-producto.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from 'src/app/components/modales/modal/modal.component';
-import { AcorrdionComponent } from './acorrdion/acorrdion.component';
 import { PipeFilterModule } from '../pipes/pipes.module';
 import { ModalProductComponent } from './modales/modal-product/modal-product.component';
 import { ModalSitiosComponent } from './modales/modal-sitios/modal-sitios.component';
-
-
 
 
 
@@ -22,7 +19,6 @@ import { ModalSitiosComponent } from './modales/modal-sitios/modal-sitios.compon
     HeaderComponent,
     FormProductoComponent,
     ModalComponent,
-    AcorrdionComponent,
     ModalProductComponent,
     ModalSitiosComponent
   ],
@@ -30,7 +26,6 @@ import { ModalSitiosComponent } from './modales/modal-sitios/modal-sitios.compon
     HeaderComponent,
     FormProductoComponent,
     ModalComponent,
-    AcorrdionComponent,
     ModalProductComponent,
     ModalSitiosComponent
   ],

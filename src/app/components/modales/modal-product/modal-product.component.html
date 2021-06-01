@@ -9,52 +9,82 @@
     </div>
 </ion-card>
 <ion-content *ngIf="modalcreateItemProduc">
-    <form [formGroup]="newItemProducForm" (submit)="btnCreateItem()">
+
+    <ion-card>
+        <ion-item>
+            <ion-select class="select-text padding-5" placeholder="Sitios" (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelecsitio'>
+                <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <span class=" text-informacion text-informacion__color">habilitar edicion, seleccione un sitio</span>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-select class="select-text padding-5" placeholder="Tipo de producto" (ionChange)="checkValueTipo($event)" [(ngModel)]='evalueSelectGenero' disabled="{{isEnabled}}">
+                <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <span class=" text-informacion text-informacion__color">habilitar edicion, seleccione un tipo</span>
+    </ion-card>
+
+    <form [formGroup]="createItemForm" (submit)="btnCreateItem()" #boxFormActive>
+
         <ion-card>
-            <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
             <ion-item>
-                <ion-label></ion-label>
-                <ion-select class="select-text padding-5" placeholder="Tipo" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
-                    <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
-                </ion-select>
+                <ion-label placeholder="Nombre del producto" position="floating" type="text" size="20">Nombre del producto</ion-label>
+                <ion-input formControlName="nombre" type="text" required></ion-input>
             </ion-item>
+            <span class="error ion-padding" *ngIf=" errorControl.nombre.errors?.required">
+                nombre es requerido.
+              </span>
+            <span class="error ion-padding" *ngIf="errorControl.nombre.errors?.minlength">
+                min 2 caracteres
+            </span>
+            <span class="error ion-padding" *ngIf="errorControl.nombre.errors?.maxlength">
+                max 20 caracteres
+            </span>
 
         </ion-card>
-        <div #activeInput>
-            <ion-card>
-                <ion-item>
-                    <ion-label placeholder="Nombre del producto" position="floating" type="text" size="20">Nombre del producto</ion-label>
-                    <ion-input [(ngModel)]="newProduc.nombre"></ion-input>
-                </ion-item>
-            </ion-card>
-            <ion-card>
-                <ion-item>
-                    <ion-label placeholder="Marca del producto" position="floating" type="text" size="20">Marca del producto</ion-label>
-                    <ion-input [(ngModel)]="newProduc.marca"></ion-input>
-                </ion-item>
-            </ion-card>
-            <ion-card>
-                <ion-item>
-                    <ion-label placeholder="Descripcion del Produto" position="floating" type="text" size="20">Descripcion del Produto</ion-label>
-                    <ion-input [(ngModel)]="newProduc.descripcion"></ion-input>
-                </ion-item>
-            </ion-card>
-            <ion-card>
-                <ion-item>
-                    <ion-label placeholder="Precio del Produto" position="floating" type="text" size="20">Precio del Produto</ion-label>
-                    <ion-input [(ngModel)]="newProduc.precio" type="number" value="0"></ion-input>
-                </ion-item>
-            </ion-card>
-        </div>
+        <ion-card>
+            <ion-item>
+                <ion-label placeholder="Marca del producto" position="floating" type="text" size="20">Marca del producto</ion-label>
+                <ion-input formControlName="marca"></ion-input>
+            </ion-item>
+            <span class="error ion-padding" *ngIf="errorControl.marca.errors?.maxlength">
+                    max 20 caracteres
+                </span>
+        </ion-card>
+        <ion-card>
+            <ion-item>
+                <ion-label placeholder="Descripcion del Produto" position="floating" type="text" size="20">Descripcion del Produto</ion-label>
+                <ion-input formControlName="descripcion"></ion-input>
+            </ion-item>
+            <span class="error ion-padding" *ngIf="errorControl.descripcion.errors?.maxlength">
+                    max 20 caracteres
+                </span>
+        </ion-card>
+        <ion-card>
+            <ion-item>
+                <ion-label placeholder="Precio del Produto" position="floating" type="text" size="20">Precio del Produto</ion-label>
+                <ion-input type="number" value="0" formControlName="precio"></ion-input>
+                <span class="error ion-padding" *ngIf="errorControl.precio.errors?.maxlength">
+                    max 5 caracteres
+                </span>
+                <span class="error ion-padding" *ngIf="errorControl.precio.errors?.pattern">
+                     solo numeros
+                </span>
+            </ion-item>
+        </ion-card>
 
-
-        <div class="displayFlex displayFlex-row__center margin-btn__35px">
-            <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
-                Cancelar
-            </ion-button>
-            <ion-button class="btn-affirmation" (click)="guardarItemProduc()" shape="round" fill="outline" fill="clear">
+        <div>
+            <ion-button class="btn-affirmation" type="submit" shape="round" fill="outline" expand="full" fill="clear" [disabled]="!createItemForm.valid">
                 Aceptar
             </ion-button>
         </div>
     </form>
+    <div class=" margin-btn__35px">
+        <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear" expand="full">
+            Cancelar
+        </ion-button>
+    </div>
 </ion-content>

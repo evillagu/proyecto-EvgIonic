@@ -21,43 +21,798 @@
         "icon": "../../../../assets/img/icon-product/aceites.jpg",
         "id": "generalAceites1",
         "sitio": "general",
-        "nombre": "aceites-vinagres"
+        "nombre": "aceites vinagres"
     },
     "salsas-tomates": {
         "icon": "../../../../assets/img/icon-product/salsas.jpg",
         "id": "generalSalsas1",
         "sitio": "general",
-        "nombre": "salsas-tomates"
+        "nombre": "salsas tomates"
     },
     "especias-sazonadores": {
         "icon": "../../../../assets/img/icon-product/especias.jpg",
         "id": "generalEspecias1",
         "sitio": "general",
-        "nombre": "especias-sazonadores"
+        "nombre": "especias sazonadores"
     },
     "harinas-levaduras": {
         "icon": "../../../../assets/img/icon-product/harina.jpg",
         "id": "generalHarinas1",
         "sitio": "general",
-        "nombre": "harinas-levaduras"
+        "nombre": "harinas levaduras"
 
     },
     "sales-azucar": {
         "icon": "../../../../assets/img/icon-product/sal.jpg",
         "id": "generalSales1",
         "sitio": "general",
-        "nombre": "sales-azucar"
+        "nombre": "sales azucar"
     },
     "pan-galletas": {
         "icon": "../../../../assets/img/icon-product/pan.jpg",
         "id": "generalPan1",
         "sitio": "general",
-        "nombre": "pan-galletas"
+        "nombre": "pan galletas"
     },
     "lacteos-huevos": {
         "icon": "../../../../assets/img/icon-product/lacteos.jpg",
         "id": "generalLacteos1",
         "sitio": "general",
-        "nombre": "lacteos-huevos"
+        "nombre": "lacteos huevos"
+    },
+    "bebidas": {
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "id": "generalbebidas1",
+        "sitio": "general",
+        "nombre": "bebidas"
+    },
+    "pescaderia": {
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "id": "generalpescaderia1",
+        "sitio": "general",
+        "nombre": "pescaderia"
+    },
+    "charcuteria": {
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "id": "generalcharcuteria1",
+        "sitio": "general",
+        "nombre": "charcuteria"
+    },
+    "carniceria": {
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "id": "generalcarniceria1",
+        "sitio": "general",
+        "nombre": "carniceria"
+    },
+    "fruteria": {
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "id": "generalfruteria1",
+        "sitio": "general",
+        "nombre": "fruteria"
+    },
+    "verduras": {
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "id": "generalverduras1",
+        "sitio": "general",
+        "nombre": "verduras"
+    },
+    "ferreteria": {
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "id": "generalferreteria1",
+        "sitio": "general",
+        "nombre": "ferreteria"
+    },
+    "drogueria": {
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "id": "generaldrogueria1",
+        "sitio": "general",
+        "nombre": "drogueria"
+    },
+    "farmacia": {
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "id": "generalfarmacia1",
+        "sitio": "general",
+        "nombre": "farmacia"
+    },
+    "picoteo": {
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "id": "generalpicoteo1",
+        "sitio": "general",
+        "nombre": "picoteo"
+    },
+    "infusiones": {
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "id": "generalinfusiones1",
+        "sitio": "general",
+        "nombre": "infusiones"
+    },
+    "chocolates": {
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "id": "generalchocolates1",
+        "sitio": "general",
+        "nombre": "chocolates"
+    },
+    "parafarmacia": {
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "id": "generalparafarmacia1",
+        "sitio": "general",
+        "nombre": "parafarmacia"
+    },
+    "menaje": {
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "id": "generalmenaje1",
+        "sitio": "general",
+        "nombre": "menaje"
+    },
+    "perfumeria": {
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "id": "generalperfumeria1",
+        "sitio": "general",
+        "nombre": "perfumeria"
+    },
+    "electronica": {
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "id": "generalelectronica1",
+        "sitio": "general",
+        "nombre": "electronica"
+    },
+    "electrodomesticos": {
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "id": "generalelelectrodomesticos1",
+        "sitio": "general",
+        "nombre": "electrodomesticos"
+    },
+    "arroz345": {
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "id": "carrefourArroz1",
+        "sitio": "carrefour",
+        "nombre": "arroz"
+    },
+    "pastas345": {
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "id": "carrefourPasta1",
+        "sitio": "carrefour",
+        "nombre": "pastas"
+    },
+    "legumbres345": {
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "id": "carrefourLegumbres1",
+        "sitio": "carrefour",
+        "nombre": "legumbres"
+    },
+    "aceites-vinagres345": {
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "id": "carrefourAceites1",
+        "sitio": "carrefour",
+        "nombre": "aceites vinagres"
+    },
+    "salsas-tomates345": {
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "id": "carrefourSalsas1",
+        "sitio": "carrefour",
+        "nombre": "salsas tomates"
+    },
+    "especias-sazonadores345": {
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "id": "carrefourEspecias1",
+        "sitio": "carrefour",
+        "nombre": "especias sazonadores"
+    },
+    "harinas-levaduras345": {
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "id": "carrefourHarinas1",
+        "sitio": "carrefour",
+        "nombre": "harinas levaduras"
+
+    },
+    "sales-azucar345": {
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "id": "carrefourSales1",
+        "sitio": "carrefour",
+        "nombre": "sales azucar"
+    },
+    "pan-galletas345": {
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "id": "carrefourPan1",
+        "sitio": "carrefour",
+        "nombre": "pan galletas"
+    },
+    "lacteos-huevos345": {
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "id": "carrefourLacteos1",
+        "sitio": "carrefour",
+        "nombre": "lacteos huevos"
+    },
+    "bebidas1": {
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "id": "carrefourbebidas1",
+        "sitio": "carrefour",
+        "nombre": "bebidas"
+    },
+    "pescaderia1": {
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "id": "carrefourpescaderia1",
+        "sitio": "carrefour",
+        "nombre": "pescaderia"
+    },
+    "charcuteria1": {
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "id": "carrefourcharcuteria1",
+        "sitio": "carrefour",
+        "nombre": "charcuteria"
+    },
+    "carniceria1": {
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "id": "carrefourcarniceria1",
+        "sitio": "carrefour",
+        "nombre": "carniceria"
+    },
+    "fruteria1": {
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "id": "carrefourfruteria1",
+        "sitio": "carrefour",
+        "nombre": "fruteria"
+    },
+    "verduras1": {
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "id": "carrefourverduras1",
+        "sitio": "carrefour",
+        "nombre": "verduras"
+    },
+    "ferreteria1": {
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "id": "carrefourferreteria1",
+        "sitio": "carrefour",
+        "nombre": "ferreteria"
+    },
+    "drogueria1": {
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "id": "carrefourdrogueria1",
+        "sitio": "carrefour",
+        "nombre": "drogueria"
+    },
+    "farmacia1": {
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "id": "carrefourfarmacia1",
+        "sitio": "carrefour",
+        "nombre": "farmacia"
+    },
+    "picoteo1": {
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "id": "carrefourpicoteo1",
+        "sitio": "carrefour",
+        "nombre": "picoteo"
+    },
+    "infusiones1": {
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "id": "carrefourinfusiones1",
+        "sitio": "carrefour",
+        "nombre": "infusiones"
+    },
+    "chocolates1": {
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "id": "carrefourchocolates1",
+        "sitio": "carrefour",
+        "nombre": "chocolates"
+    },
+    "parafarmacia1": {
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "id": "carrefourparafarmacia1",
+        "sitio": "carrefour",
+        "nombre": "parafarmacia"
+    },
+    "menaje1": {
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "id": "carrefourmenaje1",
+        "sitio": "carrefour",
+        "nombre": "menaje"
+    },
+    "perfumeria1": {
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "id": "carrefourperfumeria1",
+        "sitio": "carrefour",
+        "nombre": "perfumeria"
+    },
+    "electronica1": {
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "id": "carrefourelectronica1",
+        "sitio": "carrefour",
+        "nombre": "electronica"
+    },
+    "electrodomesticos1": {
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "id": "carrefourelelectrodomesticos1",
+        "sitio": "carrefour",
+        "nombre": "electrodomesticos"
+    },
+
+    "arroz2318": {
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "id": "diaArroz1",
+        "sitio": "dia",
+        "nombre": "arroz"
+    },
+    "pastas2318": {
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "id": "diaPasta1",
+        "sitio": "dia",
+        "nombre": "pastas"
+    },
+    "legumbres2318": {
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "id": "diaLegumbres1",
+        "sitio": "dia",
+        "nombre": "legumbres"
+    },
+    "aceites-vinagres2318": {
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "id": "diaAceites1",
+        "sitio": "dia",
+        "nombre": "aceites vinagres"
+    },
+    "salsas-tomates2318": {
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "id": "diaSalsas1",
+        "sitio": "dia",
+        "nombre": "salsas tomates"
+    },
+    "especias-sazonadores2318": {
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "id": "diaEspecias1",
+        "sitio": "dia",
+        "nombre": "especias sazonadores"
+    },
+    "harinas-levaduras2318": {
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "id": "diaHarinas1",
+        "sitio": "dia",
+        "nombre": "harinas levaduras"
+
+    },
+    "sales-azucar2318": {
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "id": "diaSales1",
+        "sitio": "dia",
+        "nombre": "sales azucar"
+    },
+    "pan-galletas2318": {
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "id": "diaPan1",
+        "sitio": "dia",
+        "nombre": "pan galletas"
+    },
+    "lacteos-huevos2318": {
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "id": "diaLacteos1",
+        "sitio": "dia",
+        "nombre": "lacteos huevos"
+    },
+    "bebidas1123": {
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "id": "diabebidas1",
+        "sitio": "dia",
+        "nombre": "bebidas"
+    },
+    "pescaderia1123": {
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "id": "diapescaderia1",
+        "sitio": "dia",
+        "nombre": "pescaderia"
+    },
+    "charcuteria1123": {
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "id": "diacharcuteria1",
+        "sitio": "dia",
+        "nombre": "charcuteria"
+    },
+    "carniceria1123": {
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "id": "diacarniceria1",
+        "sitio": "dia",
+        "nombre": "carniceria"
+    },
+    "fruteria1123": {
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "id": "diafruteria1",
+        "sitio": "dia",
+        "nombre": "fruteria"
+    },
+    "verduras1123": {
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "id": "diaverduras1",
+        "sitio": "dia",
+        "nombre": "verduras"
+    },
+    "ferreteria1123": {
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "id": "diaferreteria1",
+        "sitio": "dia",
+        "nombre": "ferreteria"
+    },
+    "drogueria1123": {
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "id": "diadrogueria1",
+        "sitio": "dia",
+        "nombre": "drogueria"
+    },
+    "farmacia1123": {
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "id": "diafarmacia1",
+        "sitio": "dia",
+        "nombre": "farmacia"
+    },
+    "picoteo1123": {
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "id": "diapicoteo1",
+        "sitio": "dia",
+        "nombre": "picoteo"
+    },
+    "infusiones1123": {
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "id": "diainfusiones1",
+        "sitio": "dia",
+        "nombre": "infusiones"
+    },
+    "chocolates1123": {
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "id": "diachocolates1",
+        "sitio": "dia",
+        "nombre": "chocolates"
+    },
+    "parafarmacia1123": {
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "id": "diaparafarmacia1",
+        "sitio": "dia",
+        "nombre": "parafarmacia"
+    },
+    "menaje1123": {
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "id": "diamenaje1",
+        "sitio": "dia",
+        "nombre": "menaje"
+    },
+    "perfumeria1123": {
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "id": "diaperfumeria1",
+        "sitio": "dia",
+        "nombre": "perfumeria"
+    },
+    "electronica1123": {
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "id": "diaelectronica1",
+        "sitio": "dia",
+        "nombre": "electronica"
+    },
+    "electrodomesticos1123": {
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "id": "diaelelectrodomesticos1",
+        "sitio": "dia",
+        "nombre": "electrodomesticos"
+    },
+
+    "arroz3391": {
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "id": "alcampoArroz1",
+        "sitio": "alcampo",
+        "nombre": "arroz"
+    },
+    "pastas3391": {
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "id": "alcampoPasta1",
+        "sitio": "alcampo",
+        "nombre": "pastas"
+    },
+    "legumbres3391": {
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "id": "alcampoLegumbres1",
+        "sitio": "alcampo",
+        "nombre": "legumbres"
+    },
+    "aceites-vinagres3391": {
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "id": "alcampoAceites1",
+        "sitio": "alcampo",
+        "nombre": "aceites vinagres"
+    },
+    "salsas-tomates3391": {
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "id": "alcampoSalsas1",
+        "sitio": "alcampo",
+        "nombre": "salsas tomates"
+    },
+    "especias-sazonadores3391": {
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "id": "alcampoEspecias1",
+        "sitio": "alcampo",
+        "nombre": "especias sazonadores"
+    },
+    "harinas-levaduras3391": {
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "id": "alcampoHarinas1",
+        "sitio": "alcampo",
+        "nombre": "harinas levaduras"
+
+    },
+    "sales-azucar3391": {
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "id": "alcampoSales1",
+        "sitio": "alcampo",
+        "nombre": "sales azucar"
+    },
+    "pan-galletas3391": {
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "id": "alcampoPan1",
+        "sitio": "alcampo",
+        "nombre": "pan galletas"
+    },
+    "lacteos-huevos3391": {
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "id": "alcampoLacteos1",
+        "sitio": "alcampo",
+        "nombre": "lacteos huevos"
+    },
+    "bebidas3391": {
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "id": "alcampobebidas1",
+        "sitio": "alcampo",
+        "nombre": "bebidas"
+    },
+    "pescaderia3391": {
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "id": "alcampopescaderia1",
+        "sitio": "alcampo",
+        "nombre": "pescaderia"
+    },
+    "charcuteria3391": {
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "id": "alcampocharcuteria1",
+        "sitio": "alcampo",
+        "nombre": "charcuteria"
+    },
+    "carniceria3391": {
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "id": "alcampocarniceria1",
+        "sitio": "alcampo",
+        "nombre": "carniceria"
+    },
+    "fruteria3391": {
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "id": "alcampofruteria1",
+        "sitio": "alcampo",
+        "nombre": "fruteria"
+    },
+    "verduras3391": {
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "id": "alcampoverduras1",
+        "sitio": "alcampo",
+        "nombre": "verduras"
+    },
+    "ferreteria3391": {
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "id": "alcampoferreteria1",
+        "sitio": "alcampo",
+        "nombre": "ferreteria"
+    },
+    "drogueria3391": {
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "id": "alcampodrogueria1",
+        "sitio": "alcampo",
+        "nombre": "drogueria"
+    },
+    "farmacia3391": {
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "id": "alcampofarmacia1",
+        "sitio": "alcampo",
+        "nombre": "farmacia"
+    },
+    "picoteo3391": {
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "id": "alcampopicoteo1",
+        "sitio": "alcampo",
+        "nombre": "picoteo"
+    },
+    "infusiones3391": {
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "id": "alcampoinfusiones1",
+        "sitio": "alcampo",
+        "nombre": "infusiones"
+    },
+    "chocolates3391": {
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "id": "alcampochocolates1",
+        "sitio": "alcampo",
+        "nombre": "chocolates"
+    },
+    "parafarmacia3391": {
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "id": "alcampoparafarmacia1",
+        "sitio": "alcampo",
+        "nombre": "parafarmacia"
+    },
+    "menaje3391": {
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "id": "alcampomenaje1",
+        "sitio": "alcampo",
+        "nombre": "menaje"
+    },
+    "perfumeria3391": {
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "id": "alcampoperfumeria1",
+        "sitio": "alcampo",
+        "nombre": "perfumeria"
+    },
+    "electronica3391": {
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "id": "alcampoelectronica1",
+        "sitio": "alcampo",
+        "nombre": "electronica"
+    },
+    "electrodomesticos3391": {
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "id": "alcampoelelectrodomesticos1",
+        "sitio": "alcampo",
+        "nombre": "electrodomesticos"
+    },
+    "arroz2121": {
+        "icon": "../../../../assets/img/icon-product/arroz.jpg",
+        "id": "mercadonaArroz1",
+        "sitio": "mercadona",
+        "nombre": "arroz"
+    },
+    "pastas2121": {
+        "icon": "../../../../assets/img/icon-product/pasta.jpg",
+        "id": "mercadonaPasta1",
+        "sitio": "mercadona",
+        "nombre": "pastas"
+    },
+    "legumbres2121": {
+        "icon": "../../../../assets/img/icon-product/legumbres.jpg",
+        "id": "mercadonaLegumbres1",
+        "sitio": "mercadona",
+        "nombre": "legumbres"
+    },
+    "aceites-vinagres2121": {
+        "icon": "../../../../assets/img/icon-product/aceites.jpg",
+        "id": "mercadonaAceites1",
+        "sitio": "mercadona",
+        "nombre": "aceites vinagres"
+    },
+    "salsas-tomates2121": {
+        "icon": "../../../../assets/img/icon-product/salsas.jpg",
+        "id": "mercadonaSalsas1",
+        "sitio": "mercadona",
+        "nombre": "salsas tomates"
+    },
+    "especias-sazonadores2121": {
+        "icon": "../../../../assets/img/icon-product/especias.jpg",
+        "id": "mercadonaEspecias1",
+        "sitio": "mercadona",
+        "nombre": "especias sazonadores"
+    },
+    "harinas-levaduras2121": {
+        "icon": "../../../../assets/img/icon-product/harina.jpg",
+        "id": "mercadonaHarinas1",
+        "sitio": "mercadona",
+        "nombre": "harinas levaduras"
+    },
+    "sales-azucar2121": {
+        "icon": "../../../../assets/img/icon-product/sal.jpg",
+        "id": "mercadonaSales1",
+        "sitio": "mercadona",
+        "nombre": "sales azucar"
+    },
+    "pan-galletas2121": {
+        "icon": "../../../../assets/img/icon-product/pan.jpg",
+        "id": "mercadonaPan1",
+        "sitio": "mercadona",
+        "nombre": "pan galletas"
+    },
+    "lacteos-huevos2121": {
+        "icon": "../../../../assets/img/icon-product/lacteos.jpg",
+        "id": "mercadonaLacteos1",
+        "sitio": "mercadona",
+        "nombre": "lacteos huevos"
+    },
+    "bebidas2121": {
+        "icon": "../../../../assets/img/icon-product/bebidas.jpg",
+        "id": "mercadonabebidas1",
+        "sitio": "mercadona",
+        "nombre": "bebidas"
+    },
+    "pescaderia2121": {
+        "icon": "../../../../assets/img/icon-product/pescaderia.jpg",
+        "id": "mercadonapescaderia1",
+        "sitio": "mercadona",
+        "nombre": "pescaderia"
+    },
+    "charcuteria2121": {
+        "icon": "../../../../assets/img/icon-product/charcuteria.jpg",
+        "id": "mercadonacharcuteria1",
+        "sitio": "mercadona",
+        "nombre": "charcuteria"
+    },
+    "carniceria2121": {
+        "icon": "../../../../assets/img/icon-product/carniceria.jpg",
+        "id": "mercadonacarniceria1",
+        "sitio": "mercadona",
+        "nombre": "carniceria"
+    },
+    "fruteria2121": {
+        "icon": "../../../../assets/img/icon-product/fruteria.jpg",
+        "id": "mercadonafruteria1",
+        "sitio": "mercadona",
+        "nombre": "fruteria"
+    },
+    "verduras2121": {
+        "icon": "../../../../assets/img/icon-product/verduras.jpg",
+        "id": "mercadonaverduras1",
+        "sitio": "mercadona",
+        "nombre": "verduras"
+    },
+    "ferreteria2121": {
+        "icon": "../../../../assets/img/icon-product/ferreteria.jpg",
+        "id": "mercadonaferreteria1",
+        "sitio": "mercadona",
+        "nombre": "ferreteria"
+    },
+    "drogueria2121": {
+        "icon": "../../../../assets/img/icon-product/drogueria.jpg",
+        "id": "mercadonadrogueria1",
+        "sitio": "mercadona",
+        "nombre": "drogueria"
+    },
+    "farmacia2121": {
+        "icon": "../../../../assets/img/icon-product/farmacia.jpg",
+        "id": "mercadonafarmacia1",
+        "sitio": "mercadona",
+        "nombre": "farmacia"
+    },
+    "picoteo2121": {
+        "icon": "../../../../assets/img/icon-product/picoteo.jpg",
+        "id": "mercadonapicoteo1",
+        "sitio": "mercadona",
+        "nombre": "picoteo"
+    },
+    "infusiones2121": {
+        "icon": "../../../../assets/img/icon-product/infusiones.jpg",
+        "id": "mercadonainfusiones1",
+        "sitio": "mercadona",
+        "nombre": "infusiones"
+    },
+    "chocolates2121": {
+        "icon": "../../../../assets/img/icon-product/chocolates.jpg",
+        "id": "mercadonachocolates1",
+        "sitio": "mercadona",
+        "nombre": "chocolates"
+    },
+    "parafarmacia2121": {
+        "icon": "../../../../assets/img/icon-product/parafarmacia.jpg",
+        "id": "mercadonaparafarmacia1",
+        "sitio": "mercadona",
+        "nombre": "parafarmacia"
+    },
+    "menaje2121": {
+        "icon": "../../../../assets/img/icon-product/menaje.jpg",
+        "id": "mercadonamenaje1",
+        "sitio": "mercadona",
+        "nombre": "menaje"
+    },
+    "perfumeria2121": {
+        "icon": "../../../../assets/img/icon-product/perfumeria.jpg",
+        "id": "mercadonaperfumeria1",
+        "sitio": "mercadona",
+        "nombre": "perfumeria"
+    },
+    "electronica2121": {
+        "icon": "../../../../assets/img/icon-product/electronica.jpg",
+        "id": "mercadonaelectronica1",
+        "sitio": "mercadona",
+        "nombre": "electronica"
+    },
+    "electrodomesticos2121": {
+        "icon": "../../../../assets/img/icon-product/electrodomesticos.jpg",
+        "id": "mercadonaelelectrodomesticos1",
+        "sitio": "mercadona",
+        "nombre": "electrodomesticos"
     }
 }

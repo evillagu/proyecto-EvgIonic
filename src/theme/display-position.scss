@@ -46,6 +46,10 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+            &__giro {
+                top: 50%;
+                transform: rotate( 90deg);
+            }
         }
         &-relative {
             position: relative;

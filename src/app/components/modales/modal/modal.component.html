@@ -60,10 +60,18 @@
         <ion-icon slot="start" name="create-sharp"></ion-icon>
     </div>
     <ion-card>
+        <span class="tex-info">Sitio donde esta el producto</span>
+        <ion-item>
+            <ion-select class="select-text padding-5" placeholder={{textSelectSitio}} [(ngModel)]='evalueSelectFilterSitio' (ionChange)="checkValueSitioFilter($event)">
+                <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-card>
+    <ion-card>
         <button class="btn-clear margin__5px" (click)="resectSelect()" name="close-outline"></button>
         <ion-item>
-            <ion-select class="select-text padding-5" placeholder="Genero Productos" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero'>
-                <ion-select-option *ngFor="let dta of productos" [value]="dta">{{dta.nombre}}</ion-select-option>
+            <ion-select class="select-text padding-5" placeholder="Genero Productos" (ionChange)="checkValue($event)" [(ngModel)]='evalueSelectGenero' disabled="{{isEnabled1}}">
+                <ion-select-option *ngFor="let dta of producFilter" [value]="dta">{{dta.nombre}}</ion-select-option>
             </ion-select>
         </ion-item>
     </ion-card>
@@ -75,14 +83,6 @@
             </ion-input>
         </ion-item>
         <ion-card>
-            <span class="tex-info">Donde esta el producto</span>
-            <ion-item>
-                <ion-label></ion-label>
-                <ion-select class="select-text padding-5" placeholder={{textSelectSitio}} (ionChange)="checkValueSitio($event)" [(ngModel)]='evalueSelectsitio'>
-                    <ion-select-option *ngFor="let dta of sitios" [value]="dta">{{dta.nombre}}</ion-select-option>
-                </ion-select>
-            </ion-item>
-
             <div class="displayFlex-row displayFlex-row__justi-around btn-active-avatar" (click)="showAll1()">
 
                 <ion-avatar class="btn-avartar">
@@ -111,7 +111,7 @@
     </div>
 </ion-content>
 
-<div *ngIf="modalEditGenero" class="displayFlex-row box-btn-cancelar">
+<div *ngIf="modalEditGenero" class="displayFlex-row displayFlex-row__center box-btn-cancelar">
     <ion-button (click)="btnAceptarEdit()" *ngIf="modalEditGenero" class="btn-affirmation " expand="block" shape="round" fill="clear">
         Aceptar
     </ion-button>

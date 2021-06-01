@@ -2,21 +2,32 @@
     "general": {
         "id": "general1",
         "nombre": "general",
-        "ubicacion": ""
+        "descripcion": "Productos que Generalmente usamos"
     },
     "carrefour": {
         "id": "carrefour1",
         "nombre": "carrefour",
         "ubicacion": "centro"
     },
-    "corte-ingles": {
-        "id": "corteingles1",
-        "nombre": "corte-ingles",
+    "dia": {
+        "id": "dia2333",
+        "nombre": "dia",
         "ubicacion": "centro"
     },
     "especifico": {
         "id": "especifico1",
-        "nombre": "especifico"
+        "nombre": "especifico",
+        "descripcion": "No es un sitio especifico"
+    },
+    "alcampo": {
+        "id": "alcampo2333",
+        "nombre": "alcampo",
+        "ubicacion": "centro"
+    },
+    "mercadona": {
+        "id": "mercadona2333",
+        "nombre": "mercadona",
+        "ubicacion": "centro"
     }
 
 }

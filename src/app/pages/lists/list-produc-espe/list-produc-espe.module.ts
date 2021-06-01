@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ListProducEspePageRoutingModule } from './list-produc-espe-routing.module';
 
 import { ListProducEspePage } from './list-produc-espe.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListProducEspePageRoutingModule
+    ListProducEspePageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ListProducEspePage]
 })

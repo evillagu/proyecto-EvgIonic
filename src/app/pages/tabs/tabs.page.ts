@@ -80,7 +80,7 @@ export class TabsPage implements OnInit {
       componentProps:{
         modalcreateItemProduc: true,
         titulo: 'Crea un producto Nuevo',
-        descricion: 'El producto es la clase de género (arroz largo, pasta macarrones.....)'   
+        descricion: 'El producto es la clase de género (arroz largo, pasta macarrones.....).'   
       },
       cssClass: 'my-custom-class'
     });

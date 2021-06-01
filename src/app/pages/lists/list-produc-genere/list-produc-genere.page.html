@@ -7,7 +7,7 @@
                 <img src={{dtaService.icon}}>
             </ion-avatar>
             <h2 class="text-title list-title">{{dtaService.nombre | titlecase}}</h2>
-            <ion-icon class="position-absolute position-absolute__centerTop right0" [name]="isNav1Displayed('navX'+dtaService) ? 'chevron-down-outline' : 'chevron-forward-outline'" slot="end"></ion-icon>
+            <ion-icon class="position-absolute position-absolute__giro right0" [name]="isNav1Displayed('navX'+dtaService) ? 'chevron-down-outline' : 'chevron-forward-outline'" slot="end"></ion-icon>
         </div>
 
         <div *ngIf="isNav1Displayed('navX'+i)" (click)="eventActionSheet()" routerLinkActive="router-link-active">
@@ -26,21 +26,29 @@
                         <span>mis listas</span>
                     </ion-item-option>
                 </ion-item-options>
-                <ion-item>
 
-                    <ion-card class="list-product__card displayFlex-row displayFlex-row__justi-around">
-                        <div class="displayFlex-column">
-                            <ion-label slot="start">
-                                <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
-                                <span>{{dtaItems.marca}}</span>
-                            </ion-label>
-                            <ion-label>
-                                <span class="text-min">{{dtaItems.descripcion}}</span>
-                            </ion-label>
+                <ion-item>
+                    <ion-card class="w100">
+                        <div class="list-product__card displayFlex-row displayFlex-row__justi-around position-relative">
+                            <div class="displayFlex-column">
+                                <ion-label slot="start">
+                                    <h3 class="text-minTitle">{{dtaItems.nombre}}</h3>
+                                    <span>{{dtaItems.marca}}</span>
+                                </ion-label>
+                                <ion-label>
+                                    <span class="text-min">{{dtaItems.descripcion}}</span>
+                                </ion-label>
+                            </div>
+                            <span class="text-precio">{{dtaItems.precio}}€</span>
                         </div>
-                        <span class="text-precio">{{dtaItems.precio}}€</span>
+                        <div class="displayFlex-row">
+                            <ion-icon name="caret-forward-outline" slot="start"></ion-icon>
+                            <span class="text-informacion text-informacion__color">a la derecha</span>
+                        </div>
+
                     </ion-card>
                 </ion-item>
+
             </ion-item-sliding>
         </div>
 

@@ -1,18 +1,47 @@
-<ion-card class="margin-top__10porcen padding-10">
-    <div class="modal-header">
-        <h1 class="text-title">
-            {{titulo}}
-        </h1>
-        <h3 class="text-min">
-            {{descricion}}
-        </h3>
+<ion-content *ngIf="createSitiosActive">
+    <ion-card class="margin-top__10porcen padding-10">
+        <div class="modal-header">
+            <h1 class="text-title">
+                {{titulo}}
+            </h1>
+            <h3 class="text-min">
+                {{descricion}}
+            </h3>
+        </div>
+    </ion-card>
+
+    <form [formGroup]="createSitioForm" (submit)=" btnCreateSitio()">
+
+        <ion-card>
+            <ion-item>
+                <ion-label placeholder="Nombre del sitio" position="floating" type="text" size="20">Nombre del producto</ion-label>
+                <ion-input formControlName="nombre" type="text" required></ion-input>
+            </ion-item>
+            <span class="error ion-padding" *ngIf=" errorControl.nombre.errors?.required">
+                nombre es requerido.
+              </span>
+            <span class="error ion-padding" *ngIf="errorControl.nombre.errors?.minlength">
+                min 2 caracteres
+            </span>
+            <ion-item>
+                <ion-label placeholder="ubicación del sitio" position="floating" type="text" size="20">Nombre del producto</ion-label>
+                <ion-input formControlName="ubicacion" type="text"></ion-input>
+            </ion-item>
+            <span class="error ion-padding" *ngIf="errorControl.ubicacion.errors?.minlength">
+                min 2 caracteres
+            </span>
+        </ion-card>
+
+        <div class="margin-btn__35px">
+
+            <ion-button class="btn-affirmation" type="submit" shape="round" expand="full" fill="outline" fill="clear" [disabled]="!createSitioForm.valid">
+                Aceptar
+            </ion-button>
+        </div>
+    </form>
+    <div class="margin-btn__35px">
+        <ion-button class="btn-red" (click)="closeModal()" shape="round" expand="full" fill="outline" fill="clear">
+            Cancelar
+        </ion-button>
     </div>
-</ion-card>
-<div class="displayFlex displayFlex-row__center margin-btn__35px">
-    <ion-button class="btn-red" (click)="closeModal()" shape="round" fill="outline" fill="clear">
-        Cancelar
-    </ion-button>
-    <ion-button class="btn-affirmation" (click)="closeModal()" shape="round" fill="outline" fill="clear">
-        Aceptar
-    </ion-button>
-</div>
+</ion-content>

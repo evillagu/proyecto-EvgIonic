@@ -1,4 +1,7 @@
 .general {
+    .w100 {
+        width: 100%;
+    }
     .action-sheet-title.sc-ion-action-sheet-md {
         text-align: center;
     }
@@ -16,5 +19,9 @@
     }
     input.ng-pending {
         border: 2px solid yellow;
+    }
+    ion-select.select-text {
+        background: rgb(53, 53, 53) !important;
+        color: white !important;
     }
 }
